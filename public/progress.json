@@ -1,8 +1,8 @@
 {
   "agile": {
     "done": false,
-    "note": "Partial. From your LinkedIn profile: Manages projects across the SDLC at Mobitel. Scrum/Jira and estimation are not mentioned on the profile.",
-    "at": 1795407325241
+    "note": "Mobitel uses Azure DevOps (counts as the board tool). Still needed before ticking: which Scrum ceremonies you take part in and whether you estimate your own tasks.",
+    "at": 1795415413353
   },
   "aws": {
     "done": false,

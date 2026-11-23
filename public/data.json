@@ -453,10 +453,10 @@
   },
   {
    "id": "agile",
-   "name": "Agile/Scrum, Jira & estimation",
+   "name": "Agile/Scrum, board tools (Jira / Azure DevOps) & estimation",
    "cat": "People & process",
-   "desc": "Scrum ceremonies, Jira boards, planning and reliable task estimation.",
-   "check": "You can take part in Scrum ceremonies, use Jira well and give reliable estimates.",
+   "desc": "Scrum ceremonies, task boards in Jira or Azure DevOps Boards, planning and reliable task estimation.",
+   "check": "You take part in Scrum ceremonies, run your work on a Jira or Azure DevOps board, and give reliable estimates.",
    "added": "2026-11-23"
   },
   {
@@ -1504,6 +1504,10 @@
   {
    "date": "2026-11-23",
    "text": "Friday run: 5 new files read (Arca.ph, Pearson SE III, UNIBENCH, ISA Back End, Air Arabia = ISA DevOps copy). 4 roles and 2 skills (NestJS, React Native) added: 25 roles, 61 skills. Repo not reachable in this run; hosted data only."
+  },
+  {
+   "date": "2026-11-23",
+   "text": "Agile skill now accepts Azure DevOps Boards as well as Jira (MillenniumIT ESP lists both). Skill id unchanged."
   }
  ],
  "drafted": [
