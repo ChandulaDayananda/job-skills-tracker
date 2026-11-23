@@ -5,9 +5,9 @@
     "at": 1795407325241
   },
   "aws": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 14 AWS, plus AWS Account Administrator work at Mobitel (IAM, budgets, deployment support). Revisit ECS/Lambda depth before an interview.",
-    "at": 1795411382250,
+    "done": false,
+    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 14 AWS, plus AWS Account Administrator work at Mobitel (IAM, budgets, deployment support). Revisit ECS/Lambda depth before an interview. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
+    "at": 1795412379223,
     "proof": [
       {
         "kind": "cv",
@@ -27,9 +27,9 @@
     "at": 1795408527501
   },
   "cicd": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 10 Jenkins, with Maven, SonarQube and Nexus modules covering the build, quality and artifact stages.",
-    "at": 1795411382250,
+    "done": false,
+    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 10 Jenkins, with Maven, SonarQube and Nexus modules covering the build, quality and artifact stages. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
+    "at": 1795412379223,
     "proof": [
       {
         "kind": "cv",
@@ -61,9 +61,9 @@
     ]
   },
   "docker": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 11 Docker.",
-    "at": 1795411382250,
+    "done": false,
+    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 11 Docker. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
+    "at": 1795412379223,
     "proof": [
       {
         "kind": "cv",
@@ -78,9 +78,9 @@
     ]
   },
   "git": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 4 Git.",
-    "at": 1795411382250,
+    "done": false,
+    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 4 Git. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
+    "at": 1795412379223,
     "proof": [
       {
         "kind": "cv",
@@ -95,9 +95,9 @@
     ]
   },
   "iac": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 15 Terraform, plus Module 13 Ansible for configuration management.",
-    "at": 1795411382250,
+    "done": false,
+    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 15 Terraform, plus Module 13 Ansible for configuration management. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
+    "at": 1795412379223,
     "proof": [
       {
         "kind": "cv",
@@ -124,9 +124,9 @@
     ]
   },
   "k8s": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 12 Kubernetes. Helm is not listed, so add a Helm chart deploy if a job asks for it.",
-    "at": 1795411382250,
+    "done": false,
+    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 12 Kubernetes. Helm is not listed, so add a Helm chart deploy if a job asks for it. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
+    "at": 1795412379223,
     "proof": [
       {
         "kind": "cv",
@@ -141,9 +141,9 @@
     ]
   },
   "linux": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 2 Linux and Module 3 Shell Scripting, plus Tomcat and Apache HTTP Server modules run on Linux.",
-    "at": 1795411382250,
+    "done": false,
+    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 2 Linux and Module 3 Shell Scripting, plus Tomcat and Apache HTTP Server modules run on Linux. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
+    "at": 1795412379223,
     "proof": [
       {
         "kind": "certificate",
@@ -175,21 +175,9 @@
     ]
   },
   "microservices": {
-    "done": true,
-    "note": "From your LinkedIn profile: Maga Engineering (Dec 2024 – Jul 2026): implemented scalable RESTful APIs using Spring Boot and microservices.",
-    "at": 1795411382250,
-    "proof": [
-      {
-        "kind": "cv",
-        "source": "ChandulaDayanandanda2026.pdf (CV)",
-        "detail": "Maga Engineering: creating RESTful microservices."
-      },
-      {
-        "kind": "linkedin",
-        "source": "LinkedIn export (Profile_1.pdf)",
-        "detail": "Maga Engineering: scalable REST APIs with Spring Boot and microservices."
-      }
-    ]
+    "done": false,
+    "note": "Still learning (your own assessment).",
+    "at": 1795412379223
   },
   "oauth": {
     "done": false,
@@ -197,9 +185,9 @@
     "at": 1795407325241
   },
   "observability": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 16 Monitoring Tools (Grafana and Prometheus).",
-    "at": 1795411382250,
+    "done": false,
+    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 16 Monitoring Tools (Grafana and Prometheus). Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
+    "at": 1795412379223,
     "proof": [
       {
         "kind": "certificate",
@@ -240,12 +228,12 @@
   "rest-soap": {
     "done": true,
     "note": "RESTful APIs led at Maga Engineering; SOAP covered through your degree and work (self-assessed).",
-    "at": 1795411382250,
+    "at": 1795412379223,
     "proof": [
       {
-        "kind": "cv",
-        "source": "ChandulaDayanandanda2026.pdf (CV)",
-        "detail": "REST only: designing and implementing scalable RESTful APIs with Spring Boot; Purchase Approval System documented with Swagger/OpenAPI. No SOAP in the CV."
+        "kind": "project",
+        "source": "Mobitel projects",
+        "detail": "All the projects you work on at Mobitel are API based (your statement). CV examples: scalable RESTful APIs with Spring Boot, M Attendance, OneFuel; Purchase Approval System documented with Swagger/OpenAPI."
       },
       {
         "kind": "self",
@@ -289,17 +277,17 @@
   "js-ts": {
     "done": true,
     "note": "Basic working level (your own assessment). Deepen before senior interviews.",
-    "at": 1795411382250,
+    "at": 1795412379223,
     "proof": [
+      {
+        "kind": "project",
+        "source": "University projects: a charity app and a real estate management app",
+        "detail": "You built both with JavaScript/TypeScript (your statement; no repo linked yet)."
+      },
       {
         "kind": "cv",
         "source": "ChandulaDayanandanda2026.pdf (CV)",
-        "detail": "Frameworks listed: ReactJS, Vue, Express JS, Node JS (all JavaScript). TypeScript is not on the CV."
-      },
-      {
-        "kind": "self",
-        "source": "",
-        "detail": "Basic working level, your own assessment."
+        "detail": "Frameworks listed: ReactJS, Vue, Express JS, Node JS. TypeScript is not on the CV."
       }
     ]
   },
@@ -336,5 +324,27 @@
         "detail": "Basic working level, your own assessment."
       }
     ]
+  },
+  "nodejs": {
+    "done": true,
+    "note": "",
+    "at": 1795412379223,
+    "proof": [
+      {
+        "kind": "project",
+        "source": "University projects: a charity app and a real estate management app",
+        "detail": "You used Node.js / Express in both projects (your statement; no repo linked yet)."
+      },
+      {
+        "kind": "cv",
+        "source": "ChandulaDayanandanda2026.pdf (CV)",
+        "detail": "Frameworks listed: Express JS, Node JS."
+      }
+    ]
+  },
+  "gcp": {
+    "done": false,
+    "note": "",
+    "at": 0
   }
 }
