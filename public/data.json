@@ -84,6 +84,22 @@
    "added": "2026-11-23"
   },
   {
+   "id": "vertx",
+   "name": "Vert.x & event-driven apps",
+   "cat": "Backend & APIs",
+   "desc": "Reactive, event-loop based JVM toolkit for event-driven services.",
+   "check": "You can build a small Vert.x service with verticles and the event bus, and explain why not to block the event loop.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "swing",
+   "name": "Java Swing (desktop)",
+   "cat": "Backend & APIs",
+   "desc": "Legacy Java desktop UI toolkit still used in some enterprise apps.",
+   "check": "You can build a basic Swing app with layouts and listeners and respect the Event Dispatch Thread rule.",
+   "added": "2026-11-23"
+  },
+  {
    "id": "rest-soap",
    "name": "REST & SOAP web services",
    "cat": "Backend & APIs",
@@ -137,6 +153,14 @@
    "cat": "Architecture",
    "desc": "Designing scalable systems, weighing trade-offs, caching, capacity and writing technical proposals.",
    "check": "You can whiteboard a scalable system and document the trade-offs in a short design doc.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "etl-cdc",
+   "name": "ETL/ELT & CDC pipelines",
+   "cat": "Data",
+   "desc": "Moving and transforming data between systems; change data capture (e.g. Debezium).",
+   "check": "You've built a small ETL/ELT flow and a CDC pipeline from a database into another sink.",
    "added": "2026-11-23"
   },
   {
@@ -525,6 +549,40 @@
    "note": ""
   },
   {
+   "id": "acentura-se",
+   "company": "Acentura",
+   "title": "Software Engineer – Full Stack",
+   "level": "Mid",
+   "exp": "1–2 yrs",
+   "mode": "On-site",
+   "source": [
+    "1j3qIzQQh0xhkGC0QbXCgNyHurHA4hJ0h"
+   ],
+   "url": "https://drive.google.com/file/d/1j3qIzQQh0xhkGC0QbXCgNyHurHA4hJ0h/view",
+   "must": [
+    "rest-soap",
+    "microservices",
+    "nodejs",
+    "java",
+    "spring-boot",
+    "js-ts",
+    "react",
+    "next-angular",
+    "html-css",
+    "sql",
+    "nosql",
+    "aws",
+    "docker",
+    "cicd",
+    "git",
+    "tdd",
+    "agile",
+    "comms"
+   ],
+   "nice": [],
+   "note": ""
+  },
+  {
    "id": "acentura-sse",
    "company": "Acentura",
    "title": "Senior Software Engineer – Full Stack",
@@ -557,6 +615,38 @@
     "comms"
    ],
    "nice": [],
+   "note": ""
+  },
+  {
+   "id": "orysys-se",
+   "company": "Orysys",
+   "title": "Java Engineer [VA Fixing]",
+   "level": "Mid",
+   "exp": "2–4 yrs",
+   "mode": "Sri Lanka",
+   "source": [
+    "1EH_bucFRhkRwEGXSe3h4rC-9oC-SudVw"
+   ],
+   "url": "https://drive.google.com/file/d/1EH_bucFRhkRwEGXSe3h4rC-9oC-SudVw/view",
+   "must": [
+    "java",
+    "spring-boot",
+    "secure-coding",
+    "build-tools",
+    "git",
+    "rest-soap",
+    "sql",
+    "unit-testing",
+    "legacy",
+    "debugging",
+    "agile"
+   ],
+   "nice": [
+    "sec-tools",
+    "spring-security",
+    "cicd",
+    "docker"
+   ],
    "note": ""
   },
   {
@@ -595,6 +685,29 @@
     "payments"
    ],
    "note": "Nice-to-have includes banking/regulated-sector experience."
+  },
+  {
+   "id": "softvil-integ",
+   "company": "Softvil",
+   "title": "Software Engineer – Integrations",
+   "level": "Mid",
+   "exp": "1–2 yrs",
+   "mode": "Hybrid, Colombo (6-month renewable)",
+   "source": [
+    "1MXeUBsjQv2Hg7zroFi0oFFxcb4bvimth"
+   ],
+   "url": "https://drive.google.com/file/d/1MXeUBsjQv2Hg7zroFi0oFFxcb4bvimth/view",
+   "must": [
+    "java",
+    "spring-boot",
+    "gcp",
+    "rest-soap",
+    "python",
+    "sql",
+    "etl-cdc"
+   ],
+   "nice": [],
+   "note": ""
   },
   {
    "id": "pickme-sse",
@@ -753,6 +866,38 @@
     "messaging"
    ],
    "note": ""
+  },
+  {
+   "id": "gallagher-se",
+   "company": "Gallagher",
+   "title": "Software Engineer – Java",
+   "level": "Mid",
+   "exp": "3 yrs",
+   "mode": "Sri Lanka (occasional shifts)",
+   "source": [
+    "1cGLChVZb0uQYdjqWuHgU2w5xD9bQj2ERspNqMczWUg4"
+   ],
+   "url": "https://docs.google.com/document/d/1cGLChVZb0uQYdjqWuHgU2w5xD9bQj2ERspNqMczWUg4/edit",
+   "must": [
+    "java",
+    "swing",
+    "vertx",
+    "build-tools",
+    "cicd",
+    "python",
+    "oop-patterns",
+    "git",
+    "debugging",
+    "agile"
+   ],
+   "nice": [
+    "rest-soap",
+    "microservices",
+    "sql",
+    "aws",
+    "docker"
+   ],
+   "note": "Needs Java 1.8 specifically, Jenkins and Gradle."
   },
   {
    "id": "oxo-sse",
@@ -921,8 +1066,8 @@
    "id": "1EH_bucFRhkRwEGXSe3h4rC-9oC-SudVw",
    "title": "Orysis SE.png",
    "modified": "2026-11-23T03:34:49.539Z",
-   "status": "skipped",
-   "note": "Mid-level role, skipped on request. Kept in this list so it is not re-read."
+   "status": "read",
+   "note": ""
   },
   {
    "id": "1-08dybLwr8qO2yJWDI31P3FfQ-5Xy_lp",
@@ -942,15 +1087,15 @@
    "id": "1MXeUBsjQv2Hg7zroFi0oFFxcb4bvimth",
    "title": "softvil SE.jpg",
    "modified": "2026-11-10T06:49:39.362Z",
-   "status": "skipped",
-   "note": "Mid-level role, skipped on request. Kept in this list so it is not re-read."
+   "status": "read",
+   "note": ""
   },
   {
    "id": "1j3qIzQQh0xhkGC0QbXCgNyHurHA4hJ0h",
    "title": "Software Engineer - Full Stack _ Acentura.pdf",
    "modified": "2026-11-10T06:50:16.230Z",
-   "status": "skipped",
-   "note": "Mid-level role, skipped on request. Kept in this list so it is not re-read."
+   "status": "read",
+   "note": ""
   },
   {
    "id": "1thZaAwAL5Ws2lRIalyya6tOzpMtm1_kM",
@@ -1005,8 +1150,8 @@
    "id": "1cGLChVZb0uQYdjqWuHgU2w5xD9bQj2ERspNqMczWUg4",
    "title": "Software Engineer - Java By Gallagher",
    "modified": "2026-10-08T02:52:55.226Z",
-   "status": "skipped",
-   "note": "Mid-level role, skipped on request. Kept in this list so it is not re-read."
+   "status": "read",
+   "note": ""
   },
   {
    "id": "1aw0a0ZMQhvc10c940s-wTpLGSWwxwZqe",
@@ -1065,7 +1210,7 @@
   },
   {
    "date": "2026-11-23",
-   "text": "Dropped the 4 mid-level roles (Acentura SE, Orysys Java Engineer, Softvil Integrations, Gallagher Java) and the 3 skills only they needed (Vert.x, Java Swing, ETL/CDC). Kept Senior and Mid–Senior roles. Future checks skip mid-level postings."
+   "text": "Mid-level roles restored (Acentura SE, Orysys Java Engineer, Softvil Integrations, Gallagher Java) together with Vert.x, Java Swing and ETL/CDC. The tracker covers all seniorities again."
   }
  ]
 }
