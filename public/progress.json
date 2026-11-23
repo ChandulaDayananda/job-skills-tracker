@@ -1,112 +1,127 @@
 {
-  "agile": {
-    "done": false,
-    "note": "Partial. From your LinkedIn profile: Manages projects across the SDLC at Mobitel. Scrum/Jira and estimation are not mentioned on the profile.",
-    "at": 1795407325241
-  },
-  "aws": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 14 AWS, plus AWS Account Administrator work at Mobitel (IAM, budgets, deployment support). Revisit ECS/Lambda depth before an interview.",
-    "at": 1795408527501
-  },
-  "build-tools": {
-    "done": false,
-    "note": "Partial. From your DevOps Engineer Masters Program certificate (NetXperts): Module 5 Maven covers the Maven half. Gradle (Gallagher asks for it) is still to do.",
-    "at": 1795408527501
-  },
-  "cicd": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 10 Jenkins, with Maven, SonarQube and Nexus modules covering the build, quality and artifact stages.",
-    "at": 1795408527501
-  },
-  "comms": {
-    "done": true,
-    "note": "From your LinkedIn profile: Mobitel: technical consultation and advisory for internal/external stakeholders, vendor and partner coordination (RFP evaluations).",
-    "at": 1795407325241
-  },
-  "docker": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 11 Docker.",
-    "at": 1795408527501
-  },
-  "git": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 4 Git.",
-    "at": 1795408527501
-  },
-  "iac": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 15 Terraform, plus Module 13 Ansible for configuration management.",
-    "at": 1795408527501
-  },
-  "java": {
-    "done": true,
-    "note": "Self-assessed: Java 8 to 21 fundamentals covered through your degree and work at Maga Engineering and Mobitel (Spring Boot backends).",
-    "at": 1795408617894
-  },
-  "k8s": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 12 Kubernetes. Helm is not listed, so add a Helm chart deploy if a job asks for it.",
-    "at": 1795408527501
-  },
-  "linux": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 2 Linux and Module 3 Shell Scripting, plus Tomcat and Apache HTTP Server modules run on Linux.",
-    "at": 1795408527501
-  },
-  "mentoring": {
-    "done": true,
-    "note": "From your LinkedIn profile: Maga Engineering: mentored intern developers on coding and DevOps best practices; also guides clients and external vendors at Mobitel.",
-    "at": 1795407325241
-  },
-  "microservices": {
-    "done": true,
-    "note": "From your LinkedIn profile: Maga Engineering (Dec 2024 – Jul 2026): implemented scalable RESTful APIs using Spring Boot and microservices.",
-    "at": 1795407325241
-  },
-  "oauth": {
-    "done": false,
-    "note": "Partial. From your LinkedIn profile: JWT is listed as a top skill. OAuth 2.0 flows and SAML still to cover.",
-    "at": 1795407325241
-  },
-  "observability": {
-    "done": true,
-    "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 16 Monitoring Tools (Grafana and Prometheus).",
-    "at": 1795408527501
-  },
-  "oop-patterns": {
-    "done": true,
-    "note": "Self-assessed: OOP principles covered through your degree and professional work. Keep practising SOLID and design patterns for senior-level interviews.",
-    "at": 1795408617894
-  },
-  "react": {
-    "done": true,
-    "note": "From your LinkedIn profile: Mobitel summary: building enterprise systems with Spring Boot, React and Laravel.",
-    "at": 1795407325241
-  },
-  "rest-soap": {
-    "done": true,
-    "note": "RESTful APIs led at Maga Engineering; SOAP covered through your degree and work (self-assessed).",
-    "at": 1795408617894
-  },
-  "sec-tools": {
-    "done": false,
-    "note": "Partial. From your DevOps Engineer Masters Program certificate (NetXperts): Module 8 SonarQube covers one SAST tool. Snyk, Dependency-Check and a DAST tool (ZAP/Burp) are still to do.",
-    "at": 1795408527501
-  },
-  "secure-coding": {
-    "done": false,
-    "note": "Partial. From your LinkedIn profile: Winner of the Cyberzilla 2.0 All-Island Cybersecurity Quiz; delivered secure applications at Maga. Review OWASP Top 10 fixes in Java to tick it.",
-    "at": 1795407325241
-  },
-  "spring-boot": {
-    "done": true,
-    "note": "From your LinkedIn profile: Software Engineer at Mobitel (Spring Boot, React, Laravel); at Maga Engineering led RESTful API implementation with Spring Boot.",
-    "at": 1795407325241
-  },
-  "system-design": {
-    "done": false,
-    "note": "Partial. From your LinkedIn profile: Software Design is a top skill; contributed to solution architecture and scalability at Maga. Tick when you can whiteboard a design and write the trade-off doc.",
-    "at": 1795407325241
-  }
+ "agile": {
+  "done": false,
+  "note": "Partial. From your LinkedIn profile: Manages projects across the SDLC at Mobitel. Scrum/Jira and estimation are not mentioned on the profile.",
+  "at": 1795407325241
+ },
+ "aws": {
+  "done": true,
+  "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 14 AWS, plus AWS Account Administrator work at Mobitel (IAM, budgets, deployment support). Revisit ECS/Lambda depth before an interview.",
+  "at": 1795408527501
+ },
+ "build-tools": {
+  "done": false,
+  "note": "Partial. From your DevOps Engineer Masters Program certificate (NetXperts): Module 5 Maven covers the Maven half. Gradle (Gallagher asks for it) is still to do.",
+  "at": 1795408527501
+ },
+ "cicd": {
+  "done": true,
+  "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 10 Jenkins, with Maven, SonarQube and Nexus modules covering the build, quality and artifact stages.",
+  "at": 1795408527501
+ },
+ "comms": {
+  "done": true,
+  "note": "From your LinkedIn profile: Mobitel: technical consultation and advisory for internal/external stakeholders, vendor and partner coordination (RFP evaluations).",
+  "at": 1795407325241
+ },
+ "docker": {
+  "done": true,
+  "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 11 Docker.",
+  "at": 1795408527501
+ },
+ "git": {
+  "done": true,
+  "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 4 Git.",
+  "at": 1795408527501
+ },
+ "iac": {
+  "done": true,
+  "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 15 Terraform, plus Module 13 Ansible for configuration management.",
+  "at": 1795408527501
+ },
+ "java": {
+  "done": true,
+  "note": "Self-assessed: Java 8 to 21 fundamentals covered through your degree and work at Maga Engineering and Mobitel (Spring Boot backends).",
+  "at": 1795408617894
+ },
+ "k8s": {
+  "done": true,
+  "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 12 Kubernetes. Helm is not listed, so add a Helm chart deploy if a job asks for it.",
+  "at": 1795408527501
+ },
+ "linux": {
+  "done": true,
+  "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 2 Linux and Module 3 Shell Scripting, plus Tomcat and Apache HTTP Server modules run on Linux.",
+  "at": 1795408527501
+ },
+ "mentoring": {
+  "done": true,
+  "note": "From your LinkedIn profile: Maga Engineering: mentored intern developers on coding and DevOps best practices; also guides clients and external vendors at Mobitel.",
+  "at": 1795407325241
+ },
+ "microservices": {
+  "done": true,
+  "note": "From your LinkedIn profile: Maga Engineering (Dec 2024 – Jul 2026): implemented scalable RESTful APIs using Spring Boot and microservices.",
+  "at": 1795407325241
+ },
+ "oauth": {
+  "done": false,
+  "note": "Partial. From your LinkedIn profile: JWT is listed as a top skill. OAuth 2.0 flows and SAML still to cover.",
+  "at": 1795407325241
+ },
+ "observability": {
+  "done": true,
+  "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 16 Monitoring Tools (Grafana and Prometheus).",
+  "at": 1795408527501
+ },
+ "oop-patterns": {
+  "done": true,
+  "note": "Self-assessed: OOP principles covered through your degree and professional work. Keep practising SOLID and design patterns for senior-level interviews.",
+  "at": 1795408617894
+ },
+ "react": {
+  "done": true,
+  "note": "From your LinkedIn profile: Mobitel summary: building enterprise systems with Spring Boot, React and Laravel.",
+  "at": 1795407325241
+ },
+ "rest-soap": {
+  "done": true,
+  "note": "RESTful APIs led at Maga Engineering; SOAP covered through your degree and work (self-assessed).",
+  "at": 1795408617894
+ },
+ "sec-tools": {
+  "done": false,
+  "note": "Partial. From your DevOps Engineer Masters Program certificate (NetXperts): Module 8 SonarQube covers one SAST tool. Snyk, Dependency-Check and a DAST tool (ZAP/Burp) are still to do.",
+  "at": 1795408527501
+ },
+ "secure-coding": {
+  "done": false,
+  "note": "Partial. From your LinkedIn profile: Winner of the Cyberzilla 2.0 All-Island Cybersecurity Quiz; delivered secure applications at Maga. Review OWASP Top 10 fixes in Java to tick it.",
+  "at": 1795407325241
+ },
+ "spring-boot": {
+  "done": true,
+  "note": "From your LinkedIn profile: Software Engineer at Mobitel (Spring Boot, React, Laravel); at Maga Engineering led RESTful API implementation with Spring Boot.",
+  "at": 1795407325241
+ },
+ "system-design": {
+  "done": false,
+  "note": "Partial. From your LinkedIn profile: Software Design is a top skill; contributed to solution architecture and scalability at Maga. Tick when you can whiteboard a design and write the trade-off doc.",
+  "at": 1795407325241
+ },
+ "js-ts": {
+  "done": true,
+  "note": "Basic working level (your own assessment). Deepen before senior interviews.",
+  "at": 1795410306267
+ },
+ "html-css": {
+  "done": true,
+  "note": "Basic working level (your own assessment). Deepen before senior interviews.",
+  "at": 1795410306267
+ },
+ "sql": {
+  "done": true,
+  "note": "Basic working level (your own assessment). Deepen before senior interviews.",
+  "at": 1795410306267
+ }
 }
