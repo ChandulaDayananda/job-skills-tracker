@@ -474,6 +474,22 @@
    "desc": "Clear written and verbal communication with teams, clients and non-technical stakeholders.",
    "check": "You can present a technical decision clearly in writing and verbally to non-technical stakeholders.",
    "added": "2026-11-23"
+  },
+  {
+   "id": "nestjs",
+   "name": "NestJS",
+   "cat": "Backend & APIs",
+   "desc": "Opinionated TypeScript Node.js framework with modules, DI, controllers and guards.",
+   "check": "You've built a NestJS REST API with modules, DTO validation and a database layer.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "react-native",
+   "name": "React Native",
+   "cat": "Frontend",
+   "desc": "Cross-platform mobile apps in React: components, navigation, state management.",
+   "check": "You've built and run a small React Native app with navigation and shared state.",
+   "added": "2026-11-23"
   }
  ],
  "roles": [
@@ -1025,7 +1041,8 @@
    "exp": "3+ yrs (2 in DevOps)",
    "mode": "Sri Lanka",
    "source": [
-    "1Wauo3_c9x31qcqMZ-6pfNs3h-oLJ2_cOuwPRIrd9nyk"
+    "1Wauo3_c9x31qcqMZ-6pfNs3h-oLJ2_cOuwPRIrd9nyk",
+    "1e7L2sLc7o6WwU07SXX_QswPF-IlK-KTV_geStUYlIgU"
    ],
    "url": "https://docs.google.com/document/d/1Wauo3_c9x31qcqMZ-6pfNs3h-oLJ2_cOuwPRIrd9nyk/edit",
    "must": [
@@ -1039,7 +1056,7 @@
     "comms"
    ],
    "nice": [],
-   "note": "Needs 2+ years as a DevOps engineer."
+   "note": "Needs 2+ years as a DevOps engineer. A copy of this JD is also filed as 'Senior Software Engineer by Air Arabia'."
   },
   {
    "id": "ev-fullstack",
@@ -1141,6 +1158,143 @@
     "nosql"
    ],
    "note": "Inferred. Recruitment post lists titles only (apply: careers@frontwalker.com), so skills are inferred from the title."
+  },
+  {
+   "id": "arca-fs",
+   "company": "Arca.ph (for a client)",
+   "title": "Senior Full-Stack Software Engineer",
+   "level": "Senior",
+   "exp": "6+ yrs",
+   "mode": "Remote, US Eastern hours",
+   "source": [
+    "1gBXdAotzp-5gbS6UxLMQvRg60iGdCt_FWord5ck3MQw"
+   ],
+   "url": "https://docs.google.com/document/d/1gBXdAotzp-5gbS6UxLMQvRg60iGdCt_FWord5ck3MQw/edit",
+   "must": [
+    "js-ts",
+    "react",
+    "next-angular",
+    "nodejs",
+    "python",
+    "sql",
+    "rest-soap",
+    "aws",
+    "docker",
+    "cicd",
+    "tdd",
+    "debugging",
+    "observability",
+    "secure-coding",
+    "comms"
+   ],
+   "nice": [
+    "graphql",
+    "llm",
+    "rag",
+    "java",
+    "spring-boot",
+    "iac",
+    "k8s",
+    "messaging",
+    "mentoring"
+   ],
+   "note": "AWS or GCP accepted; AWS tracked. No application address in the JD."
+  },
+  {
+   "id": "pearson-se3",
+   "company": "Pearson",
+   "title": "Software Engineer III",
+   "level": "Mid",
+   "exp": "2–5 yrs",
+   "mode": "Hybrid",
+   "source": [
+    "1JO8ds0wr-YRfapJzGG9zARVL6Xms106tAxIT52v_wbE"
+   ],
+   "url": "https://docs.google.com/document/d/1JO8ds0wr-YRfapJzGG9zARVL6Xms106tAxIT52v_wbE/edit",
+   "must": [
+    "java",
+    "oop-patterns",
+    "spring-boot",
+    "rest-soap",
+    "js-ts",
+    "html-css",
+    "react",
+    "sql",
+    "git",
+    "unit-testing",
+    "cicd",
+    "aws",
+    "debugging",
+    "comms"
+   ],
+   "nice": [
+    "python",
+    "docker",
+    "iac",
+    "graphql",
+    "microservices",
+    "observability",
+    "oauth",
+    "llm",
+    "tdd"
+   ],
+   "note": "Req ID 26451. React or Angular accepted; React tracked."
+  },
+  {
+   "id": "unibench-be",
+   "company": "UNIBENCH",
+   "title": "Back End Developer",
+   "level": "Mid–Senior",
+   "exp": "3–6 yrs",
+   "mode": "Remote, Sri Lanka hours (AUD pay)",
+   "source": [
+    "1neYZeqiZFsk-mg99MAnAD5yd6UN9psO-Gmv6KqSGhSY"
+   ],
+   "url": "https://docs.google.com/document/d/1neYZeqiZFsk-mg99MAnAD5yd6UN9psO-Gmv6KqSGhSY/edit",
+   "must": [
+    "nestjs",
+    "java",
+    "spring-boot",
+    "js-ts",
+    "distributed",
+    "react",
+    "react-native",
+    "docker",
+    "cicd",
+    "git",
+    "aws",
+    "observability",
+    "oop-patterns",
+    "tdd",
+    "secure-coding",
+    "agile",
+    "comms"
+   ],
+   "nice": [],
+   "note": "Poster asks for 3-6 or 6-10 yrs; job-poster requirements: 2+ yrs Java, 1+ yr Spring Boot, 2+ yrs TypeScript. UK fintech partnership. 3 yrs used as minimum."
+  },
+  {
+   "id": "isa-be",
+   "company": "ISA",
+   "title": "Senior Software Engineer – Back End",
+   "level": "Senior",
+   "exp": "3+ yrs",
+   "mode": "Sri Lanka",
+   "source": [
+    "1YlSXddlGxO2rGsqP8AG-d2F-ZMO-PRXv5QK06zhU2B8"
+   ],
+   "url": "https://docs.google.com/document/d/1YlSXddlGxO2rGsqP8AG-d2F-ZMO-PRXv5QK06zhU2B8/edit",
+   "must": [
+    "dsa",
+    "oop-patterns",
+    "tdd",
+    "aws",
+    "observability",
+    "debugging",
+    "comms"
+   ],
+   "nice": [],
+   "note": "Any backend language accepted; no specific stack named."
   }
  ],
  "sources": [
@@ -1297,6 +1451,41 @@
    "modified": "2026-11-23T04:42:52.153Z",
    "status": "read",
    "note": "Full EV Technologies JD."
+  },
+  {
+   "id": "1gBXdAotzp-5gbS6UxLMQvRg60iGdCt_FWord5ck3MQw",
+   "title": "Full Stack Engineer by Arca.ph",
+   "modified": "2026-11-23T05:53:56.274Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1JO8ds0wr-YRfapJzGG9zARVL6Xms106tAxIT52v_wbE",
+   "title": "Software Engineer III by Pearson",
+   "modified": "2026-11-23T05:56:35.706Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1neYZeqiZFsk-mg99MAnAD5yd6UN9psO-Gmv6KqSGhSY",
+   "title": "Back End Developer by UNIBENCH",
+   "modified": "2026-11-23T05:55:23.220Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1e7L2sLc7o6WwU07SXX_QswPF-IlK-KTV_geStUYlIgU",
+   "title": "Senior Software Engineer by Air Arabia",
+   "modified": "2026-11-23T05:59:02.625Z",
+   "status": "read",
+   "note": "Text of the ISA DevOps-leaning JD (same as isa-sse); no new role."
+  },
+  {
+   "id": "1YlSXddlGxO2rGsqP8AG-d2F-ZMO-PRXv5QK06zhU2B8",
+   "title": "Senior Software Engineer-Back End by ISA",
+   "modified": "2026-11-23T05:57:52.510Z",
+   "status": "read",
+   "note": ""
   }
  ],
  "changelog": [
@@ -1311,6 +1500,10 @@
   {
    "date": "2026-11-23",
    "text": "Friday-style run: 2 new files. EV Technologies now uses the full JD (16 must-have skills, was 3). Front Walker text post read: 3 roles added (titles only, skills inferred). 21 roles now."
+  },
+  {
+   "date": "2026-11-23",
+   "text": "Friday run: 5 new files read (Arca.ph, Pearson SE III, UNIBENCH, ISA Back End, Air Arabia = ISA DevOps copy). 4 roles and 2 skills (NestJS, React Native) added: 25 roles, 61 skills. Repo not reachable in this run; hosted data only."
   }
  ],
  "drafted": [
