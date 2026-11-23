@@ -17,7 +17,7 @@ npm run build    # production build in dist/
 
 - **Skills tab**: search, filter by category/status, sort by how many roles need each skill. Tick a skill to see its "checked" description; open it to add notes.
 - **By role tab**: each role's requirements and bonus skills, with a readiness bar and a link to the original job description.
-- **Progress** lives in the repo at [`public/progress.json`](public/progress.json) (the shared baseline) plus your browser's `localStorage` (your latest edits); the newer entry per skill wins. To save progress into the code: click **Export progress**, replace `public/progress.json` with the downloaded file, commit and push. The site redeploys with it.
+- **Progress** lives in the repo at [`public/progress.json`](public/progress.json) (the shared baseline) plus your browser's `localStorage` (your latest edits); the newer entry per skill wins. To save progress into the code, edit `public/progress.json` (keyed by skill `id`, each entry `{done, note, at}`), commit and push. The site redeploys with it.
 
 ## Updating the skills list
 

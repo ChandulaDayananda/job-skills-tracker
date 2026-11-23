@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { RolesView } from "./RolesView";
 import { SkillsView } from "./SkillsView";
-import type { Data, Demand, ProgressMap } from "./types";
+import type { Data, Demand } from "./types";
 import { useProgress } from "./useProgress";
 
 type Tab = "skills" | "roles";
@@ -11,9 +11,7 @@ export default function App() {
   const [data, setData] = useState<Data | null>(null);
   const [error, setError] = useState(false);
   const [tab, setTab] = useState<Tab>(initialTab);
-  const { progress, setDone, setNote, replaceAll } = useProgress();
-  const fileRef = useRef<HTMLInputElement>(null);
-  const [msg, setMsg] = useState("");
+  const { progress, setDone, setNote } = useProgress();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data.json`, { cache: "no-store" })
@@ -58,27 +56,6 @@ export default function App() {
   const pct = total ? Math.round((done / total) * 100) : 0;
   const unread = data.sources.filter((s) => s.status !== "read");
 
-  const exportProgress = () => {
-    const blob = new Blob([JSON.stringify(progress, null, 2)], { type: "application/json" });
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = "skills-progress.json";
-    a.click();
-    URL.revokeObjectURL(a.href);
-    setMsg("Exported.");
-  };
-
-  const importProgress = async (file: File) => {
-    try {
-      const parsed = JSON.parse(await file.text()) as ProgressMap;
-      if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) throw new Error();
-      replaceAll(parsed);
-      setMsg(`Imported ${Object.keys(parsed).length} entries.`);
-    } catch {
-      setMsg("That file isn’t a valid progress export.");
-    }
-  };
-
   return (
     <div className="wrap">
       <h1>Job Skills Tracker</h1>
@@ -96,26 +73,6 @@ export default function App() {
         </div>
         <div className="bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={pct}>
           <i style={{ width: `${pct}%` }} />
-        </div>
-        <div className="actions">
-          <button className="btn" onClick={exportProgress}>
-            Export progress
-          </button>
-          <button className="btn" onClick={() => fileRef.current?.click()}>
-            Import progress
-          </button>
-          <input
-            ref={fileRef}
-            type="file"
-            accept="application/json"
-            hidden
-            onChange={(e) => {
-              const f = e.target.files?.[0];
-              if (f) void importProgress(f);
-              e.target.value = "";
-            }}
-          />
-          <span className="hint">{msg || "Export to move your ticks to another browser or device."}</span>
         </div>
       </section>
 

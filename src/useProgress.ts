@@ -23,7 +23,7 @@ function merge(a: ProgressMap, b: ProgressMap): ProgressMap {
 /**
  * Progress comes from two places: public/progress.json (committed to the repo, the shared baseline)
  * and localStorage (this browser's edits). The newer entry per skill wins.
- * To commit your progress: Export progress, then replace public/progress.json with the file.
+ * To commit your progress, edit public/progress.json directly.
  */
 export function useProgress() {
   const [progress, setProgress] = useState<ProgressMap>(load);
@@ -56,7 +56,5 @@ export function useProgress() {
     });
   }, []);
 
-  const replaceAll = useCallback((next: ProgressMap) => setProgress(next), []);
-
-  return { progress, setDone, setNote, replaceAll };
+  return { progress, setDone, setNote };
 }
