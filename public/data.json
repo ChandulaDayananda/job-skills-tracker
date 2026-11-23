@@ -1044,21 +1044,103 @@
   {
    "id": "ev-fullstack",
    "company": "EV Technologies",
-   "title": "Software Engineer / Senior SE – Full Stack (Java, React, Spring Boot)",
-   "level": "Mid–Senior",
-   "exp": "3–5 yrs",
+   "title": "Senior Software Engineer – Full Stack (Java/Node, React, AWS)",
+   "level": "Senior",
+   "exp": "2–4 yrs",
    "mode": "Hybrid",
    "source": [
-    "1j3_fjh0GAm93l9yRQLgB6LyMhKBaIgxy"
+    "1j3_fjh0GAm93l9yRQLgB6LyMhKBaIgxy",
+    "1UG_426xucOUF-0u2e-Q0KpF8hEEmHQxn"
    ],
-   "url": "https://drive.google.com/file/d/1j3_fjh0GAm93l9yRQLgB6LyMhKBaIgxy/view",
+   "url": "https://drive.google.com/file/d/1UG_426xucOUF-0u2e-Q0KpF8hEEmHQxn/view",
    "must": [
     "java",
     "spring-boot",
-    "react"
+    "js-ts",
+    "react",
+    "next-angular",
+    "rest-soap",
+    "microservices",
+    "sql",
+    "nosql",
+    "aws",
+    "docker",
+    "cicd",
+    "git",
+    "tdd",
+    "agile",
+    "comms"
    ],
-   "nice": [],
-   "note": "The poster lists titles only (also SE – Integrations and Lead Data Engineer), so requirements are limited to the stack in the titles."
+   "nice": [
+    "nodejs"
+   ],
+   "note": "Full JD (updated, 2026-11-23). Backend is Node.js (Express) and/or Java (Spring Boot). Replaces the earlier titles-only poster."
+  },
+  {
+   "id": "fw-sse-fs",
+   "company": "Front Walker",
+   "title": "Senior Software Engineer – Full Stack",
+   "level": "Senior",
+   "exp": "3+ yrs",
+   "mode": "Hybrid",
+   "source": [
+    "1p3g_m6snYDEmH03P5I0oW_UMUb8exkM6"
+   ],
+   "url": "https://drive.google.com/file/d/1p3g_m6snYDEmH03P5I0oW_UMUb8exkM6/view",
+   "must": [
+    "js-ts",
+    "react",
+    "sql",
+    "rest-soap"
+   ],
+   "nice": [
+    "nodejs",
+    "java"
+   ],
+   "note": "Inferred. Recruitment post lists titles only (apply: careers@frontwalker.com), so skills are inferred from the title."
+  },
+  {
+   "id": "fw-sse-l3",
+   "company": "Front Walker",
+   "title": "Senior Software Engineer – L3 Engineering",
+   "level": "Senior",
+   "exp": "5+ yrs",
+   "mode": "Hybrid",
+   "source": [
+    "1p3g_m6snYDEmH03P5I0oW_UMUb8exkM6"
+   ],
+   "url": "https://drive.google.com/file/d/1p3g_m6snYDEmH03P5I0oW_UMUb8exkM6/view",
+   "must": [
+    "debugging",
+    "linux",
+    "sql"
+   ],
+   "nice": [
+    "observability"
+   ],
+   "note": "Inferred. Recruitment post lists titles only (apply: careers@frontwalker.com), so skills are inferred from the title."
+  },
+  {
+   "id": "fw-sde-etl",
+   "company": "Front Walker",
+   "title": "Senior Data Engineer – ETL",
+   "level": "Senior",
+   "exp": "3+ yrs",
+   "mode": "Hybrid",
+   "source": [
+    "1p3g_m6snYDEmH03P5I0oW_UMUb8exkM6"
+   ],
+   "url": "https://drive.google.com/file/d/1p3g_m6snYDEmH03P5I0oW_UMUb8exkM6/view",
+   "must": [
+    "etl-cdc",
+    "sql",
+    "python",
+    "big-data"
+   ],
+   "nice": [
+    "nosql"
+   ],
+   "note": "Inferred. Recruitment post lists titles only (apply: careers@frontwalker.com), so skills are inferred from the title."
   }
  ],
  "sources": [
@@ -1115,8 +1197,8 @@
    "id": "101X11eAFme6Q38XiNgAeBLqAC6PJiXs0",
    "title": "Front Walker SSE.pdf",
    "modified": "2026-10-21T02:27:56.464Z",
-   "status": "unreadable",
-   "note": "60 MB PDF; the Drive reader returned no text (probably scanned or image-only). Needs a smaller or text-based copy."
+   "status": "skipped",
+   "note": "Image-only original; replaced by the text copy 1p3g_… in the folder."
   },
   {
    "id": "1mSGCRDNY_miK4RZ8IzFx-5OKCwMacaP2",
@@ -1201,6 +1283,20 @@
    "modified": "2026-10-08T02:35:38.528Z",
    "status": "read",
    "note": ""
+  },
+  {
+   "id": "1p3g_m6snYDEmH03P5I0oW_UMUb8exkM6",
+   "title": "Front Walker SSE.pdf",
+   "modified": "2026-11-23T04:23:37.857Z",
+   "status": "read",
+   "note": "Text copy of the Front Walker post."
+  },
+  {
+   "id": "1UG_426xucOUF-0u2e-Q0KpF8hEEmHQxn",
+   "title": "JD_Senior Software Engineer_Updated_EV_Technologies.pdf",
+   "modified": "2026-11-23T04:42:52.153Z",
+   "status": "read",
+   "note": "Full EV Technologies JD."
   }
  ],
  "changelog": [
@@ -1211,6 +1307,17 @@
   {
    "date": "2026-11-23",
    "text": "Mid-level roles restored (Acentura SE, Orysys Java Engineer, Softvil Integrations, Gallagher Java) together with Vert.x, Java Swing and ETL/CDC. The tracker covers all seniorities again."
+  },
+  {
+   "date": "2026-11-23",
+   "text": "Friday-style run: 2 new files. EV Technologies now uses the full JD (16 must-have skills, was 3). Front Walker text post read: 3 roles added (titles only, skills inferred). 21 roles now."
+  }
+ ],
+ "drafted": [
+  {
+   "role": "ev-fullstack",
+   "date": "2026-11-23",
+   "note": "Draft made against the earlier titles-only poster; EV JD later updated."
   }
  ]
 }
