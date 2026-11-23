@@ -54,7 +54,7 @@ export default function App() {
   const total = data.skills.length;
   const done = data.skills.filter((s) => progress[s.id]?.done).length;
   const pct = total ? Math.round((done / total) * 100) : 0;
-  const unread = data.sources.filter((s) => s.status !== "read");
+  const unread = data.sources.filter((s) => s.status === "unreadable");
 
   return (
     <div className="wrap">
