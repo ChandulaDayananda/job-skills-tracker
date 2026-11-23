@@ -1,8 +1,8 @@
 {
   "agile": {
     "done": false,
-    "note": "Mobitel uses Azure DevOps (counts as the board tool). Still needed before ticking: which Scrum ceremonies you take part in and whether you estimate your own tasks.",
-    "at": 1795415413353
+    "note": "Partial. At Mobitel you create backlogs in Azure DevOps and log time spent on tasks; the project manager handles the rest. Still missing: taking part in Scrum ceremonies and giving estimates.",
+    "at": 1795415481197
   },
   "aws": {
     "done": false,
