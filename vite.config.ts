@@ -25,15 +25,16 @@ function saveProgress(): Plugin {
         req.on("data", (chunk) => (body += chunk));
         req.on("end", () => {
           try {
-            const input = JSON.parse(body) as Record<string, { done?: unknown; note?: unknown; at?: unknown }>;
+            const input = JSON.parse(body) as Record<string, { done?: unknown; note?: unknown; at?: unknown; proof?: unknown }>;
             if (typeof input !== "object" || input === null || Array.isArray(input)) throw new Error("bad shape");
-            const clean: Record<string, { done: boolean; note: string; at: number }> = {};
+            const clean: Record<string, { done: boolean; note: string; at: number; proof?: unknown[] }> = {};
             for (const id of Object.keys(input).sort()) {
               const p = input[id];
               clean[id] = {
                 done: p.done === true,
                 note: typeof p.note === "string" ? p.note : "",
                 at: typeof p.at === "number" ? p.at : 0,
+                ...(Array.isArray(p.proof) ? { proof: p.proof } : {}),
               };
             }
             writeFileSync(PROGRESS_FILE, JSON.stringify(clean, null, 2) + "\n");

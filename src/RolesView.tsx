@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Check } from "./Check";
+import { ProofList } from "./ProofList";
 import { formatYears, minYears, monthsWorked } from "./experience";
 import type { Data, ProgressMap, Role } from "./types";
 
@@ -45,6 +46,7 @@ export function RolesView({ data, progress, onToggle }: Props) {
         <div className="t">
           <b>{s.name}</b>
           {d && <small>✔ {s.check}</small>}
+          {d && <ProofList proof={progress[id]?.proof} />}
         </div>
       </div>
     );

@@ -2,7 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 import { RolesView } from "./RolesView";
 import { SkillsView } from "./SkillsView";
 import { formatYears, monthsWorked } from "./experience";
-import type { Data, Demand } from "./types";
+import { ProofDialog } from "./ProofDialog";
+import { isVerified } from "./ProofList";
+import type { Data, Demand, Proof } from "./types";
 import { useProgress } from "./useProgress";
 
 type Tab = "skills" | "roles";
@@ -13,6 +15,13 @@ export default function App() {
   const [error, setError] = useState(false);
   const [tab, setTab] = useState<Tab>(initialTab);
   const { progress, setDone, setNote } = useProgress();
+  const [asking, setAsking] = useState<string | null>(null);
+  // Unticking is free; ticking always asks for the reason first.
+  const toggle = (id: string, v: boolean) => (v ? setAsking(id) : setDone(id, false));
+  const saveProof = (p: Proof) => {
+    if (asking) setDone(asking, true, [p]);
+    setAsking(null);
+  };
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data.json`, { cache: "no-store" })
@@ -55,6 +64,7 @@ export default function App() {
   const total = data.skills.length;
   const done = data.skills.filter((s) => progress[s.id]?.done).length;
   const pct = total ? Math.round((done / total) * 100) : 0;
+  const withProof = data.skills.filter((s) => progress[s.id]?.done && isVerified(progress[s.id]?.proof)).length;
   const months = monthsWorked(data.experience);
   const unread = data.sources.filter((s) => s.status === "unreadable");
 
@@ -71,6 +81,9 @@ export default function App() {
             {done} / {total}
             <small>skills checked</small>
           </div>
+          <span className="pill ok" title="Checked skills that have a document or project behind them">
+            {withProof} of {done} with proof
+          </span>
           <span className="pill" title="Counted from the experience list in data.json">
             Experience: {formatYears(months)}
           </span>
@@ -94,11 +107,19 @@ export default function App() {
       </div>
 
       <div hidden={tab !== "skills"}>
-        <SkillsView data={data} demand={demand} progress={progress} onToggle={setDone} onNote={setNote} />
+        <SkillsView data={data} demand={demand} progress={progress} onToggle={toggle} onNote={setNote} />
       </div>
       <div hidden={tab !== "roles"}>
-        <RolesView data={data} progress={progress} onToggle={setDone} />
+        <RolesView data={data} progress={progress} onToggle={toggle} />
       </div>
+
+      {asking && (
+        <ProofDialog
+          skillName={data.skills.find((s) => s.id === asking)?.name ?? asking}
+          onCancel={() => setAsking(null)}
+          onSave={saveProof}
+        />
+      )}
 
       {unread.length > 0 && (
         <div className="panel">

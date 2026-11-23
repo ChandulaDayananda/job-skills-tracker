@@ -43,10 +43,17 @@ export interface Data {
   sources: Source[];
   changelog: { date: string; text: string }[];
 }
+export type ProofKind = "cv" | "certificate" | "linkedin" | "project" | "link" | "self";
+export interface Proof {
+  kind: ProofKind; // "self" = your own word only, no document behind it
+  source: string; // e.g. the CV file, certificate name, repo or URL
+  detail: string; // what exactly in that source shows the skill
+}
 export interface Progress {
   done: boolean;
   note: string;
   at: number;
+  proof?: Proof[]; // required whenever done is true
 }
 export type ProgressMap = Record<string, Progress>;
 export type Demand = Record<string, { must: Role[]; nice: Role[] }>;

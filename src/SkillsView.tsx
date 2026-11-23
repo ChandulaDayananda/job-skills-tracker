@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Check } from "./Check";
-import type { Data, Demand, ProgressMap, Skill } from "./types";
+import { ProofList } from "./ProofList";
+import type { Data, Demand, ProgressMap, Skill, Proof } from "./types";
 
 interface Props {
   data: Data;
@@ -84,6 +85,7 @@ export function SkillsView({ data, demand, progress, onToggle, onNote }: Props) 
               isNew={!!s.added && s.added > data.baseline}
               done={isDone(s.id)}
               note={progress[s.id]?.note ?? ""}
+              proof={progress[s.id]?.proof}
               demand={demand[s.id]}
               open={!!open[s.id]}
               onOpen={() => setOpen((o) => ({ ...o, [s.id]: !o[s.id] }))}
@@ -103,6 +105,7 @@ interface ItemProps {
   isNew: boolean;
   done: boolean;
   note: string;
+  proof?: Proof[];
   demand: Demand[string];
   open: boolean;
   onOpen: () => void;
@@ -110,7 +113,7 @@ interface ItemProps {
   onNote: (t: string) => void;
 }
 
-function SkillItem({ skill: s, showCat, isNew, done, note, demand: dm, open, onOpen, onToggle, onNote }: ItemProps) {
+function SkillItem({ skill: s, showCat, isNew, done, note, proof, demand: dm, open, onOpen, onToggle, onNote }: ItemProps) {
   const [draft, setDraft] = useState(note);
   const mustN = dm.must.length;
   const niceN = dm.nice.length;
@@ -131,6 +134,7 @@ function SkillItem({ skill: s, showCat, isNew, done, note, demand: dm, open, onO
             <span className="chev" />
           </button>
           {done && <p className="checked">✔ Checked: {s.check}</p>}
+          {done && <ProofList proof={proof} />}
           <div className="detail" hidden={!open}>
             <div>
               <h4>What it is</h4>

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import type { ProgressMap } from "./types";
+import type { Proof, ProgressMap } from "./types";
 
 const KEY = "job-skills-tracker-v1";
 
@@ -64,14 +64,18 @@ export function useProgress() {
     }
   }, [progress]);
 
-  const setDone = useCallback((id: string, done: boolean) => {
-    setProgress((m) => ({ ...m, [id]: { done, note: m[id]?.note ?? "", at: Date.now() } }));
+  /** Ticking needs proof (the app asks for it); unticking keeps the old proof so it is not lost. */
+  const setDone = useCallback((id: string, done: boolean, proof?: Proof[]) => {
+    setProgress((m) => ({
+      ...m,
+      [id]: { done, note: m[id]?.note ?? "", at: Date.now(), proof: proof ?? m[id]?.proof },
+    }));
   }, []);
 
   const setNote = useCallback((id: string, note: string) => {
     setProgress((m) => {
       if ((m[id]?.note ?? "") === note) return m;
-      return { ...m, [id]: { done: m[id]?.done ?? false, note, at: Date.now() } };
+      return { ...m, [id]: { done: m[id]?.done ?? false, note, at: Date.now(), proof: m[id]?.proof } };
     });
   }, []);
 
