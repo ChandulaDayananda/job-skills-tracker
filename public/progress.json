@@ -1,1 +1,62 @@
-{}
+{
+  "spring-boot": {
+    "done": true,
+    "note": "From your LinkedIn profile: Software Engineer at Mobitel (Spring Boot, React, Laravel); at Maga Engineering led RESTful API implementation with Spring Boot.",
+    "at": 1795407325241
+  },
+  "microservices": {
+    "done": true,
+    "note": "From your LinkedIn profile: Maga Engineering (Dec 2024 – Jul 2026): implemented scalable RESTful APIs using Spring Boot and microservices.",
+    "at": 1795407325241
+  },
+  "react": {
+    "done": true,
+    "note": "From your LinkedIn profile: Mobitel summary: building enterprise systems with Spring Boot, React and Laravel.",
+    "at": 1795407325241
+  },
+  "mentoring": {
+    "done": true,
+    "note": "From your LinkedIn profile: Maga Engineering: mentored intern developers on coding and DevOps best practices; also guides clients and external vendors at Mobitel.",
+    "at": 1795407325241
+  },
+  "comms": {
+    "done": true,
+    "note": "From your LinkedIn profile: Mobitel: technical consultation and advisory for internal/external stakeholders, vendor and partner coordination (RFP evaluations).",
+    "at": 1795407325241
+  },
+  "rest-soap": {
+    "done": false,
+    "note": "Partial. From your LinkedIn profile: REST is covered (led RESTful API implementation at Maga). Still to do for a full tick: OpenAPI docs and consuming a SOAP/WSDL service.",
+    "at": 1795407325241
+  },
+  "aws": {
+    "done": false,
+    "note": "Partial. From your LinkedIn profile: AWS Account Administrator at Mobitel: IAM users/roles/policies, MFA, audit logging, budgets and alerts, deployment support for in-house apps. Hands-on ECS/Lambda/S3/RDS not stated; working towards AWS SAA and Developer Associate.",
+    "at": 1795407325241
+  },
+  "oauth": {
+    "done": false,
+    "note": "Partial. From your LinkedIn profile: JWT is listed as a top skill. OAuth 2.0 flows and SAML still to cover.",
+    "at": 1795407325241
+  },
+  "secure-coding": {
+    "done": false,
+    "note": "Partial. From your LinkedIn profile: Winner of the Cyberzilla 2.0 All-Island Cybersecurity Quiz; delivered secure applications at Maga. Review OWASP Top 10 fixes in Java to tick it.",
+    "at": 1795407325241
+  },
+  "system-design": {
+    "done": false,
+    "note": "Partial. From your LinkedIn profile: Software Design is a top skill; contributed to solution architecture and scalability at Maga. Tick when you can whiteboard a design and write the trade-off doc.",
+    "at": 1795407325241
+  },
+  "cicd": {
+    "done": false,
+    "note": "Partial. From your LinkedIn profile: DevOps Masters Program certificate. Tick once you have built a full build/test/deploy pipeline yourself.",
+    "at": 1795407325241
+  },
+  "agile": {
+    "done": false,
+    "note": "Partial. From your LinkedIn profile: Manages projects across the SDLC at Mobitel. Scrum/Jira and estimation are not mentioned on the profile.",
+    "at": 1795407325241
+  }
+}
