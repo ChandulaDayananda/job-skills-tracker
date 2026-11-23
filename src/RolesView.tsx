@@ -82,9 +82,16 @@ export function RolesView({ data, progress, onToggle }: Props) {
                     </a>
                   </div>
                   <div className="rbar">
-                    <div className="bar">
+                    <div
+                      className="bar"
+                      role="progressbar"
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      aria-valuenow={Math.round(ready(r) * 100)}
+                    >
                       <i style={{ width: `${Math.round(ready(r) * 100)}%` }} />
                     </div>
+                    <span className="pct">{Math.round(ready(r) * 100)}%</span>
                     <span className="rcount">
                       {m}/{r.must.length} must-haves
                       {r.nice.length > 0 && ` · ${n}/${r.nice.length} bonus`}

@@ -71,8 +71,11 @@ export default function App() {
           </div>
           <span className="pill">Saved in this browser</span>
         </div>
-        <div className="bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={pct}>
-          <i style={{ width: `${pct}%` }} />
+        <div className="rbar hero-bar">
+          <div className="bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={pct}>
+            <i style={{ width: `${pct}%` }} />
+          </div>
+          <span className="pct">{pct}%</span>
         </div>
       </section>
 

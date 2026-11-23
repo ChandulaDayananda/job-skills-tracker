@@ -65,6 +65,8 @@ textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1p
 .rmeta{color:var(--muted);font-size:13px}
 .rbar{display:flex;align-items:center;gap:10px}
 .rbar .bar{flex:1;margin:0}
+.pct{font-weight:600;font-variant-numeric:tabular-nums;min-width:3ch;text-align:right}
+.hero-bar{margin-top:12px}
 .rcount{font-size:12.5px;color:var(--muted);white-space:nowrap}
 .groupt{margin:10px 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:700}
 .rsk{display:flex;gap:10px;align-items:center;padding:6px 0;border-top:1px solid var(--line)}
