@@ -19,7 +19,15 @@ export function RolesView({ data, progress, onToggle }: Props) {
   const myMonths = monthsWorked(data.experience);
   const isDone = (id: string) => !!progress[id]?.done;
 
-  const ready = (r: Role) => (r.must.length ? r.must.filter(isDone).length / r.must.length : 0);
+  const skillsPct = (r: Role) => (r.must.length ? r.must.filter(isDone).length / r.must.length : 0);
+  // Years of experience: 1 when met (or none stated / no experience data), otherwise your months / months asked for.
+  const expPct = (r: Role) => {
+    const need = minYears(r.exp);
+    if (need === null || !data.experience || need === 0) return 1;
+    return Math.min(1, myMonths / (need * 12));
+  };
+  // A role is only as ready as its weaker side: skills or years.
+  const ready = (r: Role) => Math.min(skillsPct(r), expPct(r));
   const roles = [...data.roles].sort((a, b) => {
     if (sort === "company") return a.company.localeCompare(b.company);
     if (sort === "level")
@@ -55,7 +63,7 @@ export function RolesView({ data, progress, onToggle }: Props) {
         {roles.map((r) => {
           const m = r.must.filter(isDone).length;
           const n = r.nice.filter(isDone).length;
-          const isReady = r.must.length > 0 && m === r.must.length;
+          const isReady = r.must.length > 0 && m === r.must.length && expPct(r) >= 1;
           const isOpen = !!open[r.id];
           return (
             <li className={`item${isReady ? " done" : ""}`} key={r.id}>
@@ -107,6 +115,7 @@ export function RolesView({ data, progress, onToggle }: Props) {
                     <span className="pct">{Math.round(ready(r) * 100)}%</span>
                     <span className="rcount">
                       {m}/{r.must.length} must-haves
+                      {expPct(r) < 1 && ` · experience ${Math.round(expPct(r) * 100)}%`}
                       {r.nice.length > 0 && ` · ${n}/${r.nice.length} bonus`}
                     </span>
                   </div>
