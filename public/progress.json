@@ -39,6 +39,11 @@
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 15 Terraform, plus Module 13 Ansible for configuration management.",
     "at": 1795408527501
   },
+  "java": {
+    "done": true,
+    "note": "Self-assessed: Java 8 to 21 fundamentals covered through your degree and work at Maga Engineering and Mobitel (Spring Boot backends).",
+    "at": 1795408617894
+  },
   "k8s": {
     "done": true,
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 12 Kubernetes. Helm is not listed, so add a Helm chart deploy if a job asks for it.",
@@ -69,15 +74,20 @@
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 16 Monitoring Tools (Grafana and Prometheus).",
     "at": 1795408527501
   },
+  "oop-patterns": {
+    "done": true,
+    "note": "Self-assessed: OOP principles covered through your degree and professional work. Keep practising SOLID and design patterns for senior-level interviews.",
+    "at": 1795408617894
+  },
   "react": {
     "done": true,
     "note": "From your LinkedIn profile: Mobitel summary: building enterprise systems with Spring Boot, React and Laravel.",
     "at": 1795407325241
   },
   "rest-soap": {
-    "done": false,
-    "note": "Partial. From your LinkedIn profile: REST is covered (led RESTful API implementation at Maga). Still to do for a full tick: OpenAPI docs and consuming a SOAP/WSDL service.",
-    "at": 1795407325241
+    "done": true,
+    "note": "RESTful APIs led at Maga Engineering; SOAP covered through your degree and work (self-assessed).",
+    "at": 1795408617894
   },
   "sec-tools": {
     "done": false,
