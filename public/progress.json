@@ -180,9 +180,16 @@
     "at": 1795412379223
   },
   "oauth": {
-    "done": false,
-    "note": "Partial. From your LinkedIn profile: JWT is listed as a top skill. OAuth 2.0 flows and SAML still to cover.",
-    "at": 1795407325241
+    "done": true,
+    "note": "SAML not done yet (your statement).",
+    "at": 1795412898226,
+    "proof": [
+      {
+        "kind": "project",
+        "source": "Maga Engineering systems, Mobitel systems, university and personal projects",
+        "detail": "OAuth 2.0 and JWT used in these projects (your statement; no repo linked)."
+      }
+    ]
   },
   "observability": {
     "done": false,
@@ -346,5 +353,131 @@
     "done": false,
     "note": "",
     "at": 0
+  },
+  "tdd": {
+    "done": true,
+    "note": "",
+    "at": 1795412898226,
+    "proof": [
+      {
+        "kind": "project",
+        "source": "Mobitel projects",
+        "detail": "You practise TDD and quality engineering in every project you do at Mobitel (your statement; no test repo linked)."
+      }
+    ]
+  },
+  "ai-assist": {
+    "done": true,
+    "note": "",
+    "at": 1795412898226,
+    "proof": [
+      {
+        "kind": "project",
+        "source": "Claude Code (personal projects)",
+        "detail": "You use Claude Code on personal projects (your statement)."
+      },
+      {
+        "kind": "project",
+        "source": "Codex (personal projects)",
+        "detail": "You use Codex on personal projects (your statement)."
+      },
+      {
+        "kind": "project",
+        "source": "Amazon Kiro (Mobitel)",
+        "detail": "You use Amazon Kiro at Mobitel (your statement)."
+      }
+    ]
+  },
+  "nosql": {
+    "done": true,
+    "note": "",
+    "at": 1795412898226,
+    "proof": [
+      {
+        "kind": "project",
+        "source": "Personal project from university time",
+        "detail": "You used MongoDB (your statement)."
+      },
+      {
+        "kind": "cv",
+        "source": "ChandulaDayanandanda2026.pdf (CV)",
+        "detail": "Databases: MongoDB is listed."
+      }
+    ]
+  },
+  "legacy": {
+    "done": true,
+    "note": "",
+    "at": 1795412898226,
+    "proof": [
+      {
+        "kind": "cv",
+        "source": "ChandulaDayanandanda2026.pdf (CV)",
+        "detail": "M Attendance migrated to Spring Boot 4.x with dependencies and code modernised; OneFuel re-architected from a Laugfs-only job."
+      },
+      {
+        "kind": "project",
+        "source": "OneFuel and M Attendance (Mobitel)",
+        "detail": "Legacy code and framework upgrades in both (your statement)."
+      }
+    ]
+  },
+  "spring-security": {
+    "done": true,
+    "note": "",
+    "at": 1795412898226,
+    "proof": [
+      {
+        "kind": "cv",
+        "source": "ChandulaDayanandanda2026.pdf (CV)",
+        "detail": "Enterprise Purchase Approval System: Role-Based Access Control for data security; M Attendance: Transport Admin and Regional Transport Admin roles."
+      },
+      {
+        "kind": "project",
+        "source": "Maga Engineering systems, Mobitel systems, university and personal projects",
+        "detail": "Spring Security work across these (your statement)."
+      }
+    ]
+  },
+  "jpa": {
+    "done": true,
+    "note": "",
+    "at": 1795412898226,
+    "proof": [
+      {
+        "kind": "project",
+        "source": "Maga Engineering systems, Mobitel systems, university and personal projects",
+        "detail": "Hibernate / JPA used in these projects (your statement; no repo linked)."
+      }
+    ]
+  },
+  "dsa": {
+    "done": true,
+    "note": "",
+    "at": 1795412898226,
+    "proof": [
+      {
+        "kind": "project",
+        "source": "Maga Engineering systems, Mobitel systems, university and personal projects",
+        "detail": "Data structures and algorithms done in these projects (your statement; no repo linked)."
+      }
+    ]
+  },
+  "swing": {
+    "done": true,
+    "note": "",
+    "at": 1795412898226,
+    "proof": [
+      {
+        "kind": "project",
+        "source": "Maga Engineering systems, Mobitel systems, university and personal projects",
+        "detail": "Java Swing used in these projects (your statement; no repo linked)."
+      }
+    ]
+  },
+  "payments": {
+    "done": false,
+    "note": "You have integrated PayPal and WebXPay/PayHere gateways (Maga Engineering, personal and university projects). Not ticked: the skill also asks for double-entry ledgers and reconciliation, which you haven't mentioned.",
+    "at": 1795412898226
   }
 }
