@@ -23,10 +23,12 @@ function merge(a: ProgressMap, b: ProgressMap): ProgressMap {
 /**
  * Progress comes from two places: public/progress.json (committed to the repo, the shared baseline)
  * and localStorage (this browser's edits). The newer entry per skill wins.
- * To commit your progress, edit public/progress.json directly.
+ * Under `npm run dev`, every change is also written back to public/progress.json (see vite.config.ts),
+ * and `npm run progress:push` commits and pushes it.
  */
 export function useProgress() {
   const [progress, setProgress] = useState<ProgressMap>(load);
+  const [seeded, setSeeded] = useState(false);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}progress.json`, { cache: "no-store" })
@@ -34,8 +36,25 @@ export function useProgress() {
       .then((repo: ProgressMap) => setProgress((local) => merge(repo, local)))
       .catch(() => {
         /* no committed progress: use local only */
-      });
+      })
+      .finally(() => setSeeded(true));
   }, []);
+
+  // Dev server only: write progress back to public/progress.json. Waits until the repo copy has
+  // been merged in, so a stale browser never overwrites newer committed progress.
+  useEffect(() => {
+    if (!import.meta.env.DEV || !seeded) return;
+    const timer = setTimeout(() => {
+      fetch("/__save-progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(progress),
+      }).catch(() => {
+        /* dev server not reachable: localStorage still has it */
+      });
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [progress, seeded]);
 
   useEffect(() => {
     try {

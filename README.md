@@ -17,7 +17,19 @@ npm run build    # production build in dist/
 
 - **Skills tab**: search, filter by category/status, sort by how many roles need each skill. Tick a skill to see its "checked" description; open it to add notes.
 - **By role tab**: each role's requirements and bonus skills, with a readiness bar and a link to the original job description.
-- **Progress** lives in the repo at [`public/progress.json`](public/progress.json) (the shared baseline) plus your browser's `localStorage` (your latest edits); the newer entry per skill wins. To save progress into the code, edit `public/progress.json` (keyed by skill `id`, each entry `{done, note, at}`), commit and push. The site redeploys with it.
+- **Progress** lives in the repo at [`public/progress.json`](public/progress.json) (the shared baseline) plus your browser's `localStorage` (your latest edits); the newer entry per skill wins.
+
+## Saving your progress to GitHub
+
+The deployed site can't write files, so tick skills while running it locally:
+
+```bash
+npm run dev            # every tick/note is written to public/progress.json
+npm run progress:push  # commits public/progress.json and pushes it
+```
+
+The push triggers the Pages workflow, so the deployed site shows the new progress for everyone.
+Ticks made on the deployed site only live in that browser's `localStorage`.
 
 ## Updating the skills list
 
