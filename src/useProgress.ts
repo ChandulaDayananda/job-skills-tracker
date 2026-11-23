@@ -11,9 +11,31 @@ function load(): ProgressMap {
   }
 }
 
-/** Progress lives in localStorage (per browser). Use Export/Import to move it between devices. */
+/** Merge two maps, keeping whichever entry for each skill was changed most recently. */
+function merge(a: ProgressMap, b: ProgressMap): ProgressMap {
+  const out: ProgressMap = { ...a };
+  for (const [id, p] of Object.entries(b)) {
+    if (!out[id] || (p.at ?? 0) >= (out[id].at ?? 0)) out[id] = p;
+  }
+  return out;
+}
+
+/**
+ * Progress comes from two places: public/progress.json (committed to the repo, the shared baseline)
+ * and localStorage (this browser's edits). The newer entry per skill wins.
+ * To commit your progress: Export progress, then replace public/progress.json with the file.
+ */
 export function useProgress() {
   const [progress, setProgress] = useState<ProgressMap>(load);
+
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}progress.json`, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : {}))
+      .then((repo: ProgressMap) => setProgress((local) => merge(repo, local)))
+      .catch(() => {
+        /* no committed progress: use local only */
+      });
+  }, []);
 
   useEffect(() => {
     try {
