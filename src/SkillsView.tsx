@@ -17,7 +17,7 @@ type Status = "all" | "todo" | "done";
 export function SkillsView({ data, demand, progress, onToggle, onNote }: Props) {
   const [q, setQ] = useState("");
   const [cat, setCat] = useState("all");
-  const [sort, setSort] = useState<Sort>("demand");
+  const [sort, setSort] = useState<Sort>("cat");
   const [status, setStatus] = useState<Status>("all");
   const [open, setOpen] = useState<Record<string, boolean>>({});
 
@@ -37,11 +37,21 @@ export function SkillsView({ data, demand, progress, onToggle, onNote }: Props) 
     const byScore = (a: Skill, b: Skill) =>
       score(b) - score(a) || a.name.localeCompare(b.name);
     if (sort === "az") out.sort((a, b) => a.name.localeCompare(b.name));
-    else if (sort === "cat") out.sort((a, b) => a.cat.localeCompare(b.cat) || byScore(a, b));
+    else if (sort === "cat") out.sort((a, b) => cats.indexOf(a.cat) - cats.indexOf(b.cat) || byScore(a, b));
     else out.sort(byScore);
     return out;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [data.skills, q, cat, sort, status, progress, demand]);
+  }, [data.skills, cats, q, cat, sort, status, progress, demand]);
+
+  const catCount = useMemo(() => {
+    const m: Record<string, { done: number; total: number }> = {};
+    for (const s of list) {
+      const c = (m[s.cat] ??= { done: 0, total: 0 });
+      c.total++;
+      if (progress[s.id]?.done) c.done++;
+    }
+    return m;
+  }, [list, progress]);
 
   return (
     <>
@@ -60,8 +70,8 @@ export function SkillsView({ data, demand, progress, onToggle, onNote }: Props) 
           ))}
         </select>
         <select aria-label="Sort" value={sort} onChange={(e) => setSort(e.target.value as Sort)}>
-          <option value="demand">Most needed first</option>
           <option value="cat">Group by category</option>
+          <option value="demand">Most needed first</option>
           <option value="az">A–Z</option>
         </select>
         <div className="seg" role="group" aria-label="Status filter">
@@ -82,6 +92,8 @@ export function SkillsView({ data, demand, progress, onToggle, onNote }: Props) 
               key={s.id}
               skill={s}
               showCat={sort === "cat" && (i === 0 || list[i - 1].cat !== s.cat)}
+              catStats={catCount[s.cat]}
+              grouped={sort === "cat"}
               isNew={!!s.added && s.added > data.baseline}
               done={isDone(s.id)}
               note={progress[s.id]?.note ?? ""}
@@ -102,6 +114,8 @@ export function SkillsView({ data, demand, progress, onToggle, onNote }: Props) 
 interface ItemProps {
   skill: Skill;
   showCat: boolean;
+  catStats?: { done: number; total: number };
+  grouped: boolean;
   isNew: boolean;
   done: boolean;
   note: string;
@@ -113,20 +127,29 @@ interface ItemProps {
   onNote: (t: string) => void;
 }
 
-function SkillItem({ skill: s, showCat, isNew, done, note, proof, demand: dm, open, onOpen, onToggle, onNote }: ItemProps) {
+function SkillItem({ skill: s, showCat, catStats, grouped, isNew, done, note, proof, demand: dm, open, onOpen, onToggle, onNote }: ItemProps) {
   const [draft, setDraft] = useState(note);
   const mustN = dm.must.length;
   const niceN = dm.nice.length;
   return (
     <>
-      {showCat && <li className="cathead">{s.cat}</li>}
+      {showCat && (
+        <li className="cathead">
+          <span>{s.cat}</span>
+          {catStats && (
+            <span className="catcount">
+              {catStats.done}/{catStats.total} done
+            </span>
+          )}
+        </li>
+      )}
       <li className={`item${done ? " done" : ""}`}>
         <Check checked={done} label={s.name} onChange={onToggle} />
         <div className="main">
           <button className="head" aria-expanded={open} onClick={onOpen}>
             <span className="name">{s.name}</span>
             {isNew && <span className="tag new">NEW</span>}
-            <span className="tag">{s.cat}</span>
+            {!grouped && <span className="tag">{s.cat}</span>}
             <span className="need">
               {mustN > 0 && `Required by ${mustN} role${mustN > 1 ? "s" : ""}`}
               {niceN > 0 && `${mustN > 0 ? " · " : ""}bonus in ${niceN}`}
