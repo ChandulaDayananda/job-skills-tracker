@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { RolesView } from "./RolesView";
 import { SkillsView } from "./SkillsView";
+import { formatYears, monthsWorked } from "./experience";
 import type { Data, Demand } from "./types";
 import { useProgress } from "./useProgress";
 
@@ -54,6 +55,7 @@ export default function App() {
   const total = data.skills.length;
   const done = data.skills.filter((s) => progress[s.id]?.done).length;
   const pct = total ? Math.round((done / total) * 100) : 0;
+  const months = monthsWorked(data.experience);
   const unread = data.sources.filter((s) => s.status === "unreadable");
 
   return (
@@ -69,6 +71,9 @@ export default function App() {
             {done} / {total}
             <small>skills checked</small>
           </div>
+          <span className="pill" title="Counted from the experience list in data.json">
+            Experience: {formatYears(months)}
+          </span>
           <span className="pill">Saved in this browser</span>
         </div>
         <div className="rbar hero-bar">

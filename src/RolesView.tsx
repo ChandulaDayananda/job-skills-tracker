@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Check } from "./Check";
+import { formatYears, minYears, monthsWorked } from "./experience";
 import type { Data, ProgressMap, Role } from "./types";
 
 interface Props {
@@ -15,6 +16,7 @@ export function RolesView({ data, progress, onToggle }: Props) {
   const [sort, setSort] = useState<Sort>("ready");
   const [open, setOpen] = useState<Record<string, boolean>>({});
   const skills = Object.fromEntries(data.skills.map((s) => [s.id, s]));
+  const myMonths = monthsWorked(data.experience);
   const isDone = (id: string) => !!progress[id]?.done;
 
   const ready = (r: Role) => (r.must.length ? r.must.filter(isDone).length / r.must.length : 0);
@@ -76,7 +78,18 @@ export function RolesView({ data, progress, onToggle }: Props) {
                     <span className="chev" style={{ marginLeft: "auto" }} />
                   </button>
                   <div className="rmeta">
-                    {r.exp} · {r.mode} ·{" "}
+                    {r.exp}
+                    {(() => {
+                      const need = minYears(r.exp);
+                      if (need === null || !data.experience) return null;
+                      const short = need * 12 - myMonths;
+                      return short <= 0 ? (
+                        <span style={{ color: "var(--done)" }}> (you: {formatYears(myMonths)} ✓)</span>
+                      ) : (
+                        <span> (you: {formatYears(myMonths)}, {formatYears(short)} short)</span>
+                      );
+                    })()}{" "}
+                    · {r.mode} ·{" "}
                     <a className="link" href={r.url} target="_blank" rel="noopener noreferrer">
                       Open job description ↗
                     </a>

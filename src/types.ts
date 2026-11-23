@@ -26,7 +26,15 @@ export interface Source {
   status: string;
   note?: string;
 }
+export interface Job {
+  company: string;
+  title: string;
+  start: string; // YYYY-MM
+  end: string | null; // null = current
+  counts: boolean; // set false to leave out of the total
+}
 export interface Data {
+  experience?: Job[];
   baseline: string;
   lastChecked: string;
   folderId: string;

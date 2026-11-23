@@ -1319,5 +1319,28 @@
    "date": "2026-11-23",
    "note": "Draft made against the earlier titles-only poster; EV JD later updated."
   }
+ ],
+ "experience": [
+  {
+   "company": "SLT Mobitel",
+   "title": "Software Engineer (also AWS Cloud Admin)",
+   "start": "2026-08",
+   "end": null,
+   "counts": true
+  },
+  {
+   "company": "Maga Engineering",
+   "title": "Web Developer, promoted to Junior Software Engineer",
+   "start": "2024-12",
+   "end": "2026-06",
+   "counts": true
+  },
+  {
+   "company": "Digiline",
+   "title": "Web Developer (full-time, formally internship/trainee, during degree)",
+   "start": "2024-01",
+   "end": "2024-12",
+   "counts": true
+  }
  ]
 }
