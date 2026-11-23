@@ -43,9 +43,9 @@ export interface Data {
   sources: Source[];
   changelog: { date: string; text: string }[];
 }
-export type ProofKind = "cv" | "certificate" | "linkedin" | "project" | "link" | "self";
+export type ProofKind = "cv" | "certificate" | "linkedin" | "project" | "link";
 export interface Proof {
-  kind: ProofKind; // "self" = your own word only, no document behind it
+  kind: ProofKind;
   source: string; // e.g. the CV file, certificate name, repo or URL
   detail: string; // what exactly in that source shows the skill
 }

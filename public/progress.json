@@ -7,7 +7,7 @@
   "aws": {
     "done": false,
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 14 AWS, plus AWS Account Administrator work at Mobitel (IAM, budgets, deployment support). Revisit ECS/Lambda depth before an interview. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -29,7 +29,7 @@
   "cicd": {
     "done": false,
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 10 Jenkins, with Maven, SonarQube and Nexus modules covering the build, quality and artifact stages. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -46,7 +46,7 @@
   "comms": {
     "done": true,
     "note": "From your LinkedIn profile: Mobitel: technical consultation and advisory for internal/external stakeholders, vendor and partner coordination (RFP evaluations).",
-    "at": 1795411382250,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -63,7 +63,7 @@
   "docker": {
     "done": false,
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 11 Docker. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -80,7 +80,7 @@
   "git": {
     "done": false,
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 4 Git. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -97,7 +97,7 @@
   "iac": {
     "done": false,
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 15 Terraform, plus Module 13 Ansible for configuration management. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -113,8 +113,8 @@
   },
   "java": {
     "done": true,
-    "note": "Self-assessed: Java 8 to 21 fundamentals covered through your degree and work at Maga Engineering and Mobitel (Spring Boot backends).",
-    "at": 1795411382250,
+    "note": "Java 8 to 21 fundamentals covered through your degree and work at Maga Engineering and Mobitel (Spring Boot backends).",
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -126,7 +126,7 @@
   "k8s": {
     "done": false,
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 12 Kubernetes. Helm is not listed, so add a Helm chart deploy if a job asks for it. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -143,7 +143,7 @@
   "linux": {
     "done": false,
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 2 Linux and Module 3 Shell Scripting, plus Tomcat and Apache HTTP Server modules run on Linux. Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "certificate",
@@ -160,7 +160,7 @@
   "mentoring": {
     "done": true,
     "note": "From your LinkedIn profile: Maga Engineering: mentored intern developers on coding and DevOps best practices; also guides clients and external vendors at Mobitel.",
-    "at": 1795411382250,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -182,7 +182,7 @@
   "oauth": {
     "done": true,
     "note": "SAML not done yet (your statement).",
-    "at": 1795412898226,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",
@@ -194,7 +194,7 @@
   "observability": {
     "done": false,
     "note": "From your DevOps Engineer Masters Program certificate (NetXperts): Module 16 Monitoring Tools (Grafana and Prometheus). Unmarked for now by you (2026-11-23); proof kept for when you re-tick.",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "certificate",
@@ -205,20 +205,20 @@
   },
   "oop-patterns": {
     "done": true,
-    "note": "Self-assessed: OOP principles covered through your degree and professional work. Keep practising SOLID and design patterns for senior-level interviews.",
-    "at": 1795411382250,
+    "note": "OOP principles covered through your degree and professional work. Keep practising SOLID and design patterns for senior-level interviews.",
+    "at": 1795413143293,
     "proof": [
       {
-        "kind": "self",
-        "source": "",
-        "detail": "OOP covered through degree and professional work (your own word). Nothing in the CV names OOP, SOLID or design patterns."
+        "kind": "project",
+        "source": "Degree and professional work",
+        "detail": "OOP covered through degree and professional work. Nothing in the CV names OOP, SOLID or design patterns."
       }
     ]
   },
   "react": {
     "done": true,
     "note": "From your LinkedIn profile: Mobitel summary: building enterprise systems with Spring Boot, React and Laravel.",
-    "at": 1795411382250,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -234,18 +234,13 @@
   },
   "rest-soap": {
     "done": true,
-    "note": "RESTful APIs led at Maga Engineering; SOAP covered through your degree and work (self-assessed).",
-    "at": 1795412379223,
+    "note": "RESTful APIs led at Maga Engineering; SOAP covered through your degree and work.",
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",
         "source": "Mobitel projects",
         "detail": "All the projects you work on at Mobitel are API based (your statement). CV examples: scalable RESTful APIs with Spring Boot, M Attendance, OneFuel; Purchase Approval System documented with Swagger/OpenAPI."
-      },
-      {
-        "kind": "self",
-        "source": "",
-        "detail": "SOAP covered through degree and work (your own word, unverified)."
       }
     ]
   },
@@ -262,7 +257,7 @@
   "spring-boot": {
     "done": true,
     "note": "From your LinkedIn profile: Software Engineer at Mobitel (Spring Boot, React, Laravel); at Maga Engineering led RESTful API implementation with Spring Boot.",
-    "at": 1795411382250,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -284,7 +279,7 @@
   "js-ts": {
     "done": true,
     "note": "Basic working level (your own assessment). Deepen before senior interviews.",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",
@@ -301,41 +296,31 @@
   "html-css": {
     "done": true,
     "note": "Basic working level (your own assessment). Deepen before senior interviews.",
-    "at": 1795411382250,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
         "source": "ChandulaDayanandanda2026.pdf (CV)",
         "detail": "RetailBox built with Blade and Tailwind CSS v4; Maga role: implementing responsive websites."
-      },
-      {
-        "kind": "self",
-        "source": "",
-        "detail": "Basic working level, your own assessment."
       }
     ]
   },
   "sql": {
     "done": true,
     "note": "Basic working level (your own assessment). Deepen before senior interviews.",
-    "at": 1795411382250,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
         "source": "ChandulaDayanandanda2026.pdf (CV)",
         "detail": "Languages: SQL. Databases: MySQL, MongoDB. RetailBox on MySQL; Purchase Approval System on MySQL/PostgreSQL; Mobitel role: optimizing databases for high-traffic apps."
-      },
-      {
-        "kind": "self",
-        "source": "",
-        "detail": "Basic working level, your own assessment."
       }
     ]
   },
   "nodejs": {
     "done": true,
     "note": "",
-    "at": 1795412379223,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",
@@ -357,7 +342,7 @@
   "tdd": {
     "done": true,
     "note": "",
-    "at": 1795412898226,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",
@@ -369,7 +354,7 @@
   "ai-assist": {
     "done": true,
     "note": "",
-    "at": 1795412898226,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",
@@ -391,7 +376,7 @@
   "nosql": {
     "done": true,
     "note": "",
-    "at": 1795412898226,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",
@@ -408,7 +393,7 @@
   "legacy": {
     "done": true,
     "note": "",
-    "at": 1795412898226,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -425,7 +410,7 @@
   "spring-security": {
     "done": true,
     "note": "",
-    "at": 1795412898226,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "cv",
@@ -442,7 +427,7 @@
   "jpa": {
     "done": true,
     "note": "",
-    "at": 1795412898226,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",
@@ -454,7 +439,7 @@
   "dsa": {
     "done": true,
     "note": "",
-    "at": 1795412898226,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",
@@ -466,7 +451,7 @@
   "swing": {
     "done": true,
     "note": "",
-    "at": 1795412898226,
+    "at": 1795413143293,
     "proof": [
       {
         "kind": "project",

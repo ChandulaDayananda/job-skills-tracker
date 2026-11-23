@@ -7,7 +7,6 @@ const KINDS: { value: ProofKind; label: string; hint: string }[] = [
   { value: "linkedin", label: "LinkedIn profile", hint: "Which role or skill entry" },
   { value: "project", label: "Project / repo", hint: "Repo or project name and what you built" },
   { value: "link", label: "Link (article, course page)", hint: "URL and what it proves" },
-  { value: "self", label: "Self-declared (no document)", hint: "Say where you used it. Shown as unverified" },
 ];
 
 interface Props {
@@ -23,8 +22,7 @@ export function ProofDialog({ skillName, onCancel, onSave }: Props) {
   const first = useRef<HTMLSelectElement>(null);
   useEffect(() => first.current?.focus(), []);
 
-  const needSource = kind !== "self";
-  const ok = detail.trim().length >= 15 && (!needSource || source.trim().length >= 3);
+  const ok = detail.trim().length >= 15 && source.trim().length >= 3;
   const hint = KINDS.find((k) => k.value === kind)?.hint;
 
   return (
@@ -48,18 +46,16 @@ export function ProofDialog({ skillName, onCancel, onSave }: Props) {
             ))}
           </select>
         </label>
-        {needSource && (
-          <label>
-            Source
-            <input value={source} onChange={(e) => setSource(e.target.value)} placeholder={hint} />
-          </label>
-        )}
+        <label>
+          Source
+          <input value={source} onChange={(e) => setSource(e.target.value)} placeholder={hint} />
+        </label>
         <label>
           What shows it (at least a sentence)
           <textarea
             value={detail}
             onChange={(e) => setDetail(e.target.value)}
-            placeholder={needSource ? "e.g. “Built X with Y at Z”" : hint}
+            placeholder="e.g. “Built X with Y at Z”"
           />
         </label>
         <div className="modal-actions">

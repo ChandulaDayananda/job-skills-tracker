@@ -3,7 +3,7 @@ import { RolesView } from "./RolesView";
 import { SkillsView } from "./SkillsView";
 import { formatYears, monthsWorked } from "./experience";
 import { ProofDialog } from "./ProofDialog";
-import { isVerified } from "./ProofList";
+import { hasProof } from "./ProofList";
 import type { Data, Demand, Proof } from "./types";
 import { useProgress } from "./useProgress";
 
@@ -64,7 +64,7 @@ export default function App() {
   const total = data.skills.length;
   const done = data.skills.filter((s) => progress[s.id]?.done).length;
   const pct = total ? Math.round((done / total) * 100) : 0;
-  const withProof = data.skills.filter((s) => progress[s.id]?.done && isVerified(progress[s.id]?.proof)).length;
+  const withProof = data.skills.filter((s) => progress[s.id]?.done && hasProof(progress[s.id]?.proof)).length;
   const months = monthsWorked(data.experience);
   const unread = data.sources.filter((s) => s.status === "unreadable");
 
@@ -81,7 +81,7 @@ export default function App() {
             {done} / {total}
             <small>skills checked</small>
           </div>
-          <span className="pill ok" title="Checked skills that have a document or project behind them">
+          <span className="pill ok" title="Checked skills with a reason recorded">
             {withProof} of {done} with proof
           </span>
           <span className="pill" title="Counted from the experience list in data.json">
