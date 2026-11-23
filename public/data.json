@@ -1,0 +1,1212 @@
+{
+ "baseline": "2026-11-23",
+ "lastChecked": "2026-11-23",
+ "folderId": "1vnGL3WFRc_A7YaDxQTOLzVeMIN3yDs0F",
+ "skills": [
+  {
+   "id": "java",
+   "name": "Java (8–21)",
+   "cat": "Core languages",
+   "desc": "Modern Java: streams, records, collections, concurrency and JVM basics.",
+   "check": "You can write and explain Java 17/21 code using streams, records, generics and concurrency without looking things up.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "golang",
+   "name": "Go",
+   "cat": "Core languages",
+   "desc": "Go for backend services: goroutines, channels, interfaces, modules.",
+   "check": "You've built and tested a small Go service using goroutines/channels and can explain Go's concurrency model.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "python",
+   "name": "Python",
+   "cat": "Core languages",
+   "desc": "Python for scripting, integrations and data/AI work.",
+   "check": "You can write a clean Python script or small service (venv, typing, pytest) and use it for integrations or data tasks.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "js-ts",
+   "name": "JavaScript (ES6+) & TypeScript",
+   "cat": "Core languages",
+   "desc": "Modern JS (async/await, modules, DOM and browser APIs) plus TypeScript's type system.",
+   "check": "You can write typed TypeScript and explain closures, promises, the event loop and DOM basics.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "groovy",
+   "name": "Groovy scripting",
+   "cat": "Core languages",
+   "desc": "JVM scripting language used for Pricefx logic and in Gradle/Jenkins scripts.",
+   "check": "You can read and write simple Groovy scripts with closures and collections.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cpp",
+   "name": "C/C++ basics",
+   "cat": "Core languages",
+   "desc": "Familiarity with C/C++ syntax and memory model (listed as a bonus).",
+   "check": "You can read C++ code and write a small program using pointers/references and STL containers.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "spring-boot",
+   "name": "Spring & Spring Boot",
+   "cat": "Backend & APIs",
+   "desc": "Spring Boot/MVC: dependency injection, configuration, REST controllers, validation, actuator.",
+   "check": "You can build and deploy a production-style Spring Boot REST service and explain auto-configuration and the bean lifecycle.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "spring-security",
+   "name": "Spring Security & AuthN/AuthZ",
+   "cat": "Backend & APIs",
+   "desc": "Securing Spring apps: filter chain, authentication, roles and method security, CSRF/CORS.",
+   "check": "You've secured a Spring Boot API with JWT/OAuth2 and role-based access, and can explain the filter chain.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "jpa",
+   "name": "Hibernate / JPA",
+   "cat": "Backend & APIs",
+   "desc": "ORM mapping, lazy loading, transactions, the N+1 problem, query tuning.",
+   "check": "You can model relations in JPA, spot and fix N+1 queries, and explain transaction boundaries.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "nodejs",
+   "name": "Node.js / Express",
+   "cat": "Backend & APIs",
+   "desc": "Server-side JavaScript with Express: routing, middleware, async patterns.",
+   "check": "You've built a REST API in Express with middleware, validation and a database connection.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "vertx",
+   "name": "Vert.x & event-driven apps",
+   "cat": "Backend & APIs",
+   "desc": "Reactive, event-loop based JVM toolkit for event-driven services.",
+   "check": "You can build a small Vert.x service with verticles and the event bus, and explain why not to block the event loop.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "swing",
+   "name": "Java Swing (desktop)",
+   "cat": "Backend & APIs",
+   "desc": "Legacy Java desktop UI toolkit still used in some enterprise apps.",
+   "check": "You can build a basic Swing app with layouts and listeners and respect the Event Dispatch Thread rule.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rest-soap",
+   "name": "REST & SOAP web services",
+   "cat": "Backend & APIs",
+   "desc": "Designing HTTP APIs (status codes, versioning, pagination, OpenAPI) and consuming SOAP/WSDL services.",
+   "check": "You can design a clean REST API with OpenAPI docs and consume a SOAP service from a WSDL.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "grpc",
+   "name": "gRPC & Protobuf",
+   "cat": "Backend & APIs",
+   "desc": "Binary RPC with schema-first Protobuf contracts and streaming.",
+   "check": "You've defined a .proto, generated stubs and built a client/server including a streaming call.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "graphql",
+   "name": "GraphQL & AWS AppSync",
+   "cat": "Backend & APIs",
+   "desc": "Schema-based query API; AppSync is AWS's managed GraphQL service.",
+   "check": "You can design a schema and resolvers, explain GraphQL vs REST trade-offs, and have tried AppSync.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "microservices",
+   "name": "Microservices architecture",
+   "cat": "Architecture",
+   "desc": "Service boundaries, API gateways, resilience patterns, data ownership and deployment.",
+   "check": "You can explain how to split a monolith and have built 2+ services with resilience (retries, circuit breakers).",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "distributed",
+   "name": "Distributed systems & data consistency",
+   "cat": "Architecture",
+   "desc": "CAP, idempotency, sagas, eventual consistency, concurrency and distributed transactions.",
+   "check": "You can explain sagas, the outbox pattern and idempotency, and handle high-concurrency consistency in a demo.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "messaging",
+   "name": "Kafka & RabbitMQ",
+   "cat": "Architecture",
+   "desc": "Message brokers and event streaming: topics, partitions, consumer groups, acknowledgements.",
+   "check": "You've built a producer/consumer pair on Kafka (and tried RabbitMQ) and can explain delivery guarantees.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "system-design",
+   "name": "System design & architecture",
+   "cat": "Architecture",
+   "desc": "Designing scalable systems, weighing trade-offs, caching, capacity and writing technical proposals.",
+   "check": "You can whiteboard a scalable system and document the trade-offs in a short design doc.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "etl-cdc",
+   "name": "ETL/ELT & CDC pipelines",
+   "cat": "Data",
+   "desc": "Moving and transforming data between systems; change data capture (e.g. Debezium).",
+   "check": "You've built a small ETL/ELT flow and a CDC pipeline from a database into another sink.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sql",
+   "name": "SQL & relational databases",
+   "cat": "Data",
+   "desc": "SQL queries, joins, indexing and execution plans on Oracle/MySQL/PostgreSQL/MS SQL; schema design.",
+   "check": "You can write complex joins and window functions, design a normalised schema and read an EXPLAIN plan.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "nosql",
+   "name": "NoSQL databases",
+   "cat": "Data",
+   "desc": "Document/key-value stores such as MongoDB or DynamoDB: modelling and tuning.",
+   "check": "You've modelled data in MongoDB (or DynamoDB), added indexes and can explain when NoSQL beats SQL.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "big-data",
+   "name": "Large-dataset processing",
+   "cat": "Data",
+   "desc": "Processing big or streaming data efficiently: batching, partitioning, parallelism.",
+   "check": "You can process a multi-GB dataset efficiently and explain your partitioning and batching choices.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "react",
+   "name": "React (state & async data)",
+   "cat": "Frontend",
+   "desc": "React components, hooks, state management, async data fetching and reusable component design.",
+   "check": "You've built a React app with hooks, shared state and API calls using reusable components.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "next-angular",
+   "name": "Next.js / Angular",
+   "cat": "Frontend",
+   "desc": "Next.js (SSR/SSG, routing) and Angular as alternative frontend frameworks.",
+   "check": "You've built a small Next.js app with SSR/SSG and can read Angular components and services.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "html-css",
+   "name": "HTML5, CSS & responsive design",
+   "cat": "Frontend",
+   "desc": "Semantic HTML, modern CSS (flex/grid) and responsive layouts.",
+   "check": "You can build a responsive page from a design using semantic HTML and flex/grid.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "front-perf",
+   "name": "Frontend tooling & performance",
+   "cat": "Frontend",
+   "desc": "Webpack/Vite, Babel, npm; bundle size, lazy loading, Core Web Vitals.",
+   "check": "You can analyse a bundle, apply code-splitting/lazy-loading and improve a Lighthouse score.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "a11y",
+   "name": "Accessibility (WCAG/ARIA)",
+   "cat": "Frontend",
+   "desc": "Building UIs that work with keyboards and screen readers, per WCAG.",
+   "check": "You can audit a page for WCAG issues and fix them with semantic HTML and ARIA.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "aws",
+   "name": "AWS (ECS, Lambda, S3, RDS)",
+   "cat": "Cloud & DevOps",
+   "desc": "Core AWS services for building and deploying cloud-native applications.",
+   "check": "You've deployed an app using ECS or Lambda with S3 and RDS, and understand IAM and VPC basics.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "gcp",
+   "name": "Google Cloud (GCP)",
+   "cat": "Cloud & DevOps",
+   "desc": "Core GCP services: Cloud Run/GKE, Pub/Sub, BigQuery, Cloud SQL.",
+   "check": "You've deployed a service on GCP (Cloud Run or GKE) and used Pub/Sub or BigQuery.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "docker",
+   "name": "Docker & containers",
+   "cat": "Cloud & DevOps",
+   "desc": "Images, Dockerfiles, compose, image hardening.",
+   "check": "You can containerise an app with a multi-stage Dockerfile and run it with docker compose.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "k8s",
+   "name": "Kubernetes & Helm",
+   "cat": "Cloud & DevOps",
+   "desc": "Container orchestration: deployments, services, config/secrets, Helm charts.",
+   "check": "You can deploy an app to Kubernetes with a Helm chart and debug a failing pod.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cicd",
+   "name": "CI/CD pipelines",
+   "cat": "Cloud & DevOps",
+   "desc": "Automated build, test and deploy with Jenkins, GitHub Actions or GitLab CI.",
+   "check": "You've built a pipeline that builds, tests and deploys an app (Jenkins or GitHub Actions).",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "iac",
+   "name": "Infrastructure as Code",
+   "cat": "Cloud & DevOps",
+   "desc": "Terraform/CloudFormation/Pulumi to provision infrastructure reproducibly.",
+   "check": "You've provisioned a small cloud stack from scratch with Terraform or CloudFormation.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "observability",
+   "name": "Monitoring & observability",
+   "cat": "Cloud & DevOps",
+   "desc": "Logs, metrics and traces (Datadog, CloudWatch, OpenTelemetry) and SRE basics.",
+   "check": "You've instrumented a service with metrics/traces and built an alert and a dashboard.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "linux",
+   "name": "Linux & Windows environments",
+   "cat": "Cloud & DevOps",
+   "desc": "Shell, processes, permissions, networking; deploying on Linux/Windows servers.",
+   "check": "You're comfortable on the Linux shell: permissions, services, logs, networking and basic bash scripts.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "build-tools",
+   "name": "Maven & Gradle",
+   "cat": "Cloud & DevOps",
+   "desc": "Java build and dependency management, including resolving CVEs in transitive dependencies.",
+   "check": "You can manage multi-module builds and BOMs and resolve dependency conflicts and CVEs.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "git",
+   "name": "Git workflows",
+   "cat": "Cloud & DevOps",
+   "desc": "Branching, rebasing, pull-request flow and conflict resolution.",
+   "check": "You can rebase, cherry-pick, resolve conflicts and explain a branching strategy.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "oop-patterns",
+   "name": "OOP, SOLID & design patterns",
+   "cat": "Engineering practice",
+   "desc": "Object-oriented design, SOLID principles and common design patterns, with trade-offs.",
+   "check": "You can name and apply common GoF patterns and refactor a code smell using SOLID.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dsa",
+   "name": "Data structures & algorithms",
+   "cat": "Engineering practice",
+   "desc": "Core data structures and algorithms, plus complexity analysis.",
+   "check": "You can solve medium-level problems (graphs, DP, heaps) and explain their time/space complexity.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "unit-testing",
+   "name": "JUnit & Mockito",
+   "cat": "Engineering practice",
+   "desc": "Unit and integration testing for Java with JUnit 5 and Mockito.",
+   "check": "You write JUnit 5 tests with Mockito mocks and meaningful assertions, with solid coverage.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "tdd",
+   "name": "TDD & quality engineering",
+   "cat": "Engineering practice",
+   "desc": "Test-driven development and wider QE practice (unit, integration, contract, E2E tests).",
+   "check": "You've built a feature test-first and can explain unit vs integration vs contract tests.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "debugging",
+   "name": "Debugging, RCA & production support",
+   "cat": "Engineering practice",
+   "desc": "Tracing production issues through logs/metrics to root cause and writing RCAs.",
+   "check": "You can trace a production issue to its root cause and write a clear RCA.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "legacy",
+   "name": "Legacy code & framework upgrades",
+   "cat": "Engineering practice",
+   "desc": "Upgrading Java 8→17, Spring 4→6 and libraries; modernising legacy apps safely.",
+   "check": "You've upgraded a legacy Spring/Java app across major versions and fixed the resulting breakages.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "secure-coding",
+   "name": "OWASP Top 10 & secure coding",
+   "cat": "Security",
+   "desc": "Common web vulnerabilities and how to prevent them in code and configuration.",
+   "check": "You can explain each OWASP Top 10 item and fix SQLi, XSS, CSRF and SSRF in Java code.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "sec-tools",
+   "name": "SAST/DAST/SCA tools",
+   "cat": "Security",
+   "desc": "SonarQube, Snyk, Checkmarx, Fortify, OWASP Dependency-Check, Burp Suite, OWASP ZAP.",
+   "check": "You've run SonarQube/Snyk and Dependency-Check on a project, triaged findings and verified a fix with ZAP or Burp.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "oauth",
+   "name": "OAuth 2.0, JWT & SAML",
+   "cat": "Security",
+   "desc": "Token-based and federated authentication standards.",
+   "check": "You can explain the OAuth2 flows and JWT validation and implement a login with an identity provider.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ai-assist",
+   "name": "AI coding assistants",
+   "cat": "AI & agents",
+   "desc": "Using Copilot/Cursor/Claude Code productively and validating their output.",
+   "check": "You use an AI assistant daily and can explain how you validate its output and where it fails.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "llm",
+   "name": "LLMs & GenAI APIs",
+   "cat": "AI & agents",
+   "desc": "Model APIs, prompting, structured output and cost/latency/model trade-offs.",
+   "check": "You've integrated an LLM API into an app with prompt design, streaming and cost/latency control.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "agents",
+   "name": "Agent frameworks",
+   "cat": "AI & agents",
+   "desc": "LangChain, LlamaIndex, AutoGen, CrewAI; tool calling and multi-agent orchestration.",
+   "check": "You've built an agent with tool-calling and multi-step orchestration.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mcp",
+   "name": "Model Context Protocol (MCP)",
+   "cat": "AI & agents",
+   "desc": "Protocol for exposing tools and data to AI agents; building MCP servers and clients.",
+   "check": "You've built a small MCP server and connected it to a client.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rag",
+   "name": "RAG & vector databases",
+   "cat": "AI & agents",
+   "desc": "Embeddings, chunking, vector search and semantic retrieval.",
+   "check": "You've built a RAG pipeline with embeddings and a vector store and checked retrieval quality.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ai-gov",
+   "name": "LLM gateways, guardrails & AI observability",
+   "cat": "AI & agents",
+   "desc": "Rate limiting, guardrails, prompt management and tracing LLM calls (OpenTelemetry, LangSmith).",
+   "check": "You can add a gateway and guardrails to an LLM app and trace its calls end to end.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "pricefx",
+   "name": "Pricefx platform (Configuration Engineer)",
+   "cat": "Domain & certs",
+   "desc": "Pricing SaaS platform; Sysco LABS expects the Pricefx Configuration Engineer certification.",
+   "check": "You've completed Pricefx training and passed the Configuration Engineer certification.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "payments",
+   "name": "Payments, ledgers & reconciliation",
+   "cat": "Domain & certs",
+   "desc": "Fintech basics: payment gateways, double-entry ledgers, reconciliation.",
+   "check": "You can explain double-entry ledgers and reconciliation and have modelled a simple ledger service.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "stats-apps",
+   "name": "Statistical / data-intensive apps",
+   "cat": "Domain & certs",
+   "desc": "Numerical accuracy, analytics and visualisation-heavy applications.",
+   "check": "You've built a feature with statistical calculations/visualisations while handling precision correctly.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "agile",
+   "name": "Agile/Scrum, Jira & estimation",
+   "cat": "People & process",
+   "desc": "Scrum ceremonies, Jira boards, planning and reliable task estimation.",
+   "check": "You can take part in Scrum ceremonies, use Jira well and give reliable estimates.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "mentoring",
+   "name": "Mentoring & technical leadership",
+   "cat": "People & process",
+   "desc": "Code reviews, guiding juniors, owning technical decisions.",
+   "check": "You've mentored a junior through code reviews and led a small technical effort.",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "comms",
+   "name": "Communication & stakeholder collaboration",
+   "cat": "People & process",
+   "desc": "Clear written and verbal communication with teams, clients and non-technical stakeholders.",
+   "check": "You can present a technical decision clearly in writing and verbally to non-technical stakeholders.",
+   "added": "2026-11-23"
+  }
+ ],
+ "roles": [
+  {
+   "id": "sysco-pricefx",
+   "company": "Sysco LABS",
+   "title": "Senior Software Engineer (Pricefx)",
+   "level": "Senior",
+   "exp": "2+ yrs",
+   "mode": "Hybrid, Sri Lanka",
+   "source": [
+    "1gdv6WD-b-w56p12ZjHS4kD8bInXbu44xLBKyrEGvrqc"
+   ],
+   "url": "https://docs.google.com/document/d/1gdv6WD-b-w56p12ZjHS4kD8bInXbu44xLBKyrEGvrqc/edit",
+   "must": [
+    "oop-patterns",
+    "dsa",
+    "secure-coding",
+    "ai-assist",
+    "llm",
+    "aws",
+    "cicd",
+    "iac",
+    "git",
+    "agile",
+    "unit-testing",
+    "debugging",
+    "observability",
+    "mentoring",
+    "comms",
+    "pricefx"
+   ],
+   "nice": [
+    "groovy"
+   ],
+   "note": "Cloud may be AWS/GCP/Azure; AWS tracked here."
+  },
+  {
+   "id": "sysco-ssse",
+   "company": "Sysco LABS",
+   "title": "Senior Software Engineer (R267485)",
+   "level": "Senior",
+   "exp": "2–4 yrs",
+   "mode": "Hybrid, Sri Lanka",
+   "source": [
+    "1aw0a0ZMQhvc10c940s-wTpLGSWwxwZqe"
+   ],
+   "url": "https://drive.google.com/file/d/1aw0a0ZMQhvc10c940s-wTpLGSWwxwZqe/view",
+   "must": [
+    "java",
+    "spring-boot",
+    "rest-soap",
+    "microservices",
+    "js-ts",
+    "react",
+    "html-css",
+    "sql",
+    "nosql",
+    "linux",
+    "docker",
+    "aws",
+    "gcp",
+    "llm",
+    "agents",
+    "agile",
+    "tdd",
+    "mentoring",
+    "comms"
+   ],
+   "nice": [
+    "messaging"
+   ],
+   "note": ""
+  },
+  {
+   "id": "acentura-se",
+   "company": "Acentura",
+   "title": "Software Engineer – Full Stack",
+   "level": "Mid",
+   "exp": "1–2 yrs",
+   "mode": "On-site",
+   "source": [
+    "1j3qIzQQh0xhkGC0QbXCgNyHurHA4hJ0h"
+   ],
+   "url": "https://drive.google.com/file/d/1j3qIzQQh0xhkGC0QbXCgNyHurHA4hJ0h/view",
+   "must": [
+    "rest-soap",
+    "microservices",
+    "nodejs",
+    "java",
+    "spring-boot",
+    "js-ts",
+    "react",
+    "next-angular",
+    "html-css",
+    "sql",
+    "nosql",
+    "aws",
+    "docker",
+    "cicd",
+    "git",
+    "tdd",
+    "agile",
+    "comms"
+   ],
+   "nice": [],
+   "note": ""
+  },
+  {
+   "id": "acentura-sse",
+   "company": "Acentura",
+   "title": "Senior Software Engineer – Full Stack",
+   "level": "Senior",
+   "exp": "2–4 yrs",
+   "mode": "On-site",
+   "source": [
+    "1ZSNsO00Ar-PgGAUtz2mhAkoqk959gIVZ"
+   ],
+   "url": "https://drive.google.com/file/d/1ZSNsO00Ar-PgGAUtz2mhAkoqk959gIVZ/view",
+   "must": [
+    "rest-soap",
+    "microservices",
+    "distributed",
+    "nodejs",
+    "java",
+    "spring-boot",
+    "js-ts",
+    "react",
+    "next-angular",
+    "html-css",
+    "sql",
+    "nosql",
+    "aws",
+    "docker",
+    "cicd",
+    "git",
+    "tdd",
+    "agile",
+    "comms"
+   ],
+   "nice": [],
+   "note": ""
+  },
+  {
+   "id": "orysys-se",
+   "company": "Orysys",
+   "title": "Java Engineer [VA Fixing]",
+   "level": "Mid",
+   "exp": "2–4 yrs",
+   "mode": "Sri Lanka",
+   "source": [
+    "1EH_bucFRhkRwEGXSe3h4rC-9oC-SudVw"
+   ],
+   "url": "https://drive.google.com/file/d/1EH_bucFRhkRwEGXSe3h4rC-9oC-SudVw/view",
+   "must": [
+    "java",
+    "spring-boot",
+    "secure-coding",
+    "build-tools",
+    "git",
+    "rest-soap",
+    "sql",
+    "unit-testing",
+    "legacy",
+    "debugging",
+    "agile"
+   ],
+   "nice": [
+    "sec-tools",
+    "spring-security",
+    "cicd",
+    "docker"
+   ],
+   "note": ""
+  },
+  {
+   "id": "orysys-sse",
+   "company": "Orysys",
+   "title": "Senior Java Engineer [VA Fixing]",
+   "level": "Senior",
+   "exp": "4+ yrs",
+   "mode": "Sri Lanka",
+   "source": [
+    "1-08dybLwr8qO2yJWDI31P3FfQ-5Xy_lp"
+   ],
+   "url": "https://drive.google.com/file/d/1-08dybLwr8qO2yJWDI31P3FfQ-5Xy_lp/view",
+   "must": [
+    "java",
+    "spring-boot",
+    "spring-security",
+    "jpa",
+    "secure-coding",
+    "sec-tools",
+    "build-tools",
+    "legacy",
+    "rest-soap",
+    "sql",
+    "unit-testing",
+    "git",
+    "cicd",
+    "debugging",
+    "mentoring",
+    "agile"
+   ],
+   "nice": [
+    "oauth",
+    "docker",
+    "k8s",
+    "payments"
+   ],
+   "note": "Nice-to-have includes banking/regulated-sector experience."
+  },
+  {
+   "id": "softvil-integ",
+   "company": "Softvil",
+   "title": "Software Engineer – Integrations",
+   "level": "Mid",
+   "exp": "1–2 yrs",
+   "mode": "Hybrid, Colombo (6-month renewable)",
+   "source": [
+    "1MXeUBsjQv2Hg7zroFi0oFFxcb4bvimth"
+   ],
+   "url": "https://drive.google.com/file/d/1MXeUBsjQv2Hg7zroFi0oFFxcb4bvimth/view",
+   "must": [
+    "java",
+    "spring-boot",
+    "gcp",
+    "rest-soap",
+    "python",
+    "sql",
+    "etl-cdc"
+   ],
+   "nice": [],
+   "note": ""
+  },
+  {
+   "id": "pickme-sse",
+   "company": "PickMe",
+   "title": "Senior Software Engineer – Java",
+   "level": "Senior",
+   "exp": "3+ yrs",
+   "mode": "Colombo",
+   "source": [
+    "1thZaAwAL5Ws2lRIalyya6tOzpMtm1_kM"
+   ],
+   "url": "https://drive.google.com/file/d/1thZaAwAL5Ws2lRIalyya6tOzpMtm1_kM/view",
+   "must": [
+    "java",
+    "golang",
+    "spring-boot",
+    "microservices",
+    "distributed",
+    "unit-testing",
+    "agile",
+    "mentoring",
+    "comms"
+   ],
+   "nice": [
+    "gcp",
+    "k8s",
+    "docker",
+    "payments",
+    "messaging",
+    "cpp"
+   ],
+   "note": ""
+  },
+  {
+   "id": "wso2-agent",
+   "company": "WSO2",
+   "title": "Senior Software Engineer – Agent Platform",
+   "level": "Senior",
+   "exp": "2–4+ yrs",
+   "mode": "Colombo",
+   "source": [
+    "1mSGCRDNY_miK4RZ8IzFx-5OKCwMacaP2"
+   ],
+   "url": "https://drive.google.com/file/d/1mSGCRDNY_miK4RZ8IzFx-5OKCwMacaP2/view",
+   "must": [
+    "java",
+    "golang",
+    "python",
+    "distributed",
+    "grpc",
+    "rest-soap",
+    "microservices",
+    "secure-coding",
+    "unit-testing",
+    "cicd",
+    "agile",
+    "mentoring",
+    "comms"
+   ],
+   "nice": [
+    "agents",
+    "mcp",
+    "ai-gov",
+    "rag"
+   ],
+   "note": "Requires one or more of Java, Go, C/C++ or Python; all three tracked here."
+  },
+  {
+   "id": "pearson-sse",
+   "company": "Pearson",
+   "title": "Senior Software Engineer (Frontend React)",
+   "level": "Senior",
+   "exp": "—",
+   "mode": "Hybrid",
+   "source": [
+    "1ZMoDMf7qx91WNoAhB-kiZXnPI_TYnTdoB55txzhTSpk"
+   ],
+   "url": "https://docs.google.com/document/d/1ZMoDMf7qx91WNoAhB-kiZXnPI_TYnTdoB55txzhTSpk/edit",
+   "must": [
+    "react",
+    "js-ts",
+    "nodejs",
+    "aws",
+    "graphql",
+    "cicd",
+    "git",
+    "front-perf",
+    "a11y"
+   ],
+   "nice": [
+    "microservices"
+   ],
+   "note": ""
+  },
+  {
+   "id": "h2o-se",
+   "company": "H2O.ai",
+   "title": "Software Engineer",
+   "level": "Mid–Senior",
+   "exp": "5+ yrs (or strong projects)",
+   "mode": "Sri Lanka, remote-friendly",
+   "source": [
+    "1elBCewuoKVF1glWCdrW1PC30k3elgCshwJjIsASL75o"
+   ],
+   "url": "https://docs.google.com/document/d/1elBCewuoKVF1glWCdrW1PC30k3elgCshwJjIsASL75o/edit",
+   "must": [
+    "java",
+    "golang",
+    "python",
+    "k8s",
+    "grpc",
+    "rest-soap",
+    "microservices",
+    "distributed",
+    "big-data"
+   ],
+   "nice": [
+    "messaging"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ilabs-fs",
+   "company": "iLabs",
+   "title": "Senior/Software Engineer – Full Stack (Java + React)",
+   "level": "Mid–Senior",
+   "exp": "2.5+ yrs",
+   "mode": "On-site, Battaramulla",
+   "source": [
+    "16BqbN51m54-ZAlK4YjSt8rzqu86SE45qdyofc88LmtQ"
+   ],
+   "url": "https://docs.google.com/document/d/16BqbN51m54-ZAlK4YjSt8rzqu86SE45qdyofc88LmtQ/edit",
+   "must": [
+    "java",
+    "spring-boot",
+    "react",
+    "microservices",
+    "rest-soap",
+    "distributed",
+    "front-perf",
+    "html-css",
+    "sql",
+    "nosql",
+    "git",
+    "cicd",
+    "agile",
+    "oop-patterns",
+    "unit-testing",
+    "ai-assist",
+    "comms"
+   ],
+   "nice": [
+    "docker",
+    "k8s",
+    "aws",
+    "messaging"
+   ],
+   "note": ""
+  },
+  {
+   "id": "gallagher-se",
+   "company": "Gallagher",
+   "title": "Software Engineer – Java",
+   "level": "Mid",
+   "exp": "3 yrs",
+   "mode": "Sri Lanka (occasional shifts)",
+   "source": [
+    "1cGLChVZb0uQYdjqWuHgU2w5xD9bQj2ERspNqMczWUg4"
+   ],
+   "url": "https://docs.google.com/document/d/1cGLChVZb0uQYdjqWuHgU2w5xD9bQj2ERspNqMczWUg4/edit",
+   "must": [
+    "java",
+    "swing",
+    "vertx",
+    "build-tools",
+    "cicd",
+    "python",
+    "oop-patterns",
+    "git",
+    "debugging",
+    "agile"
+   ],
+   "nice": [
+    "rest-soap",
+    "microservices",
+    "sql",
+    "aws",
+    "docker"
+   ],
+   "note": "Needs Java 1.8 specifically, Jenkins and Gradle."
+  },
+  {
+   "id": "oxo-sse",
+   "company": "OXO Tech",
+   "title": "Senior Software Engineer (Java + Spring Boot + React)",
+   "level": "Senior",
+   "exp": "5–8+ yrs",
+   "mode": "Flexible",
+   "source": [
+    "1OqTJZnWF5oOmWo0yyJrryQ_bhupQ8U7KzzSAg0_MDQY"
+   ],
+   "url": "https://docs.google.com/document/d/1OqTJZnWF5oOmWo0yyJrryQ_bhupQ8U7KzzSAg0_MDQY/edit",
+   "must": [
+    "java",
+    "spring-boot",
+    "rest-soap",
+    "oop-patterns",
+    "sql",
+    "nosql",
+    "unit-testing",
+    "spring-security",
+    "secure-coding",
+    "js-ts",
+    "react",
+    "html-css",
+    "front-perf",
+    "a11y",
+    "distributed",
+    "system-design",
+    "legacy",
+    "debugging",
+    "observability",
+    "git",
+    "aws",
+    "docker",
+    "cicd",
+    "mentoring",
+    "comms"
+   ],
+   "nice": [
+    "stats-apps",
+    "iac"
+   ],
+   "note": ""
+  },
+  {
+   "id": "mit-esp",
+   "company": "MillenniumIT ESP",
+   "title": "Senior Software Engineer – Java",
+   "level": "Senior",
+   "exp": "2+ yrs",
+   "mode": "Sri Lanka",
+   "source": [
+    "1yjxLbbcmVOXZX-SnpaHp2bF1E8dV930VJFbJEpIGGvA",
+    "1w9VDgXyTGW68q4eDnKUIvvDUjs4Bu9Wpq2vOuEOKjbY"
+   ],
+   "url": "https://docs.google.com/document/d/1yjxLbbcmVOXZX-SnpaHp2bF1E8dV930VJFbJEpIGGvA/edit",
+   "must": [
+    "java",
+    "spring-boot",
+    "oop-patterns",
+    "js-ts",
+    "html-css",
+    "sql",
+    "nosql",
+    "react",
+    "next-angular",
+    "messaging",
+    "microservices",
+    "docker",
+    "k8s",
+    "git",
+    "rest-soap",
+    "agile",
+    "system-design",
+    "linux",
+    "aws",
+    "unit-testing",
+    "mentoring",
+    "comms"
+   ],
+   "nice": [],
+   "note": "Two identical copies of this description are in the folder."
+  },
+  {
+   "id": "codegen-sse",
+   "company": "CodeGen International",
+   "title": "Senior Software Engineer",
+   "level": "Senior",
+   "exp": "3–4 yrs",
+   "mode": "Sri Lanka",
+   "source": [
+    "1fCVqKtrIfzt1_SBcAqyGxYhZE6tuOO5_RSwdC8DAtGw"
+   ],
+   "url": "https://docs.google.com/document/d/1fCVqKtrIfzt1_SBcAqyGxYhZE6tuOO5_RSwdC8DAtGw/edit",
+   "must": [
+    "react",
+    "html-css",
+    "java",
+    "spring-boot",
+    "rest-soap",
+    "microservices",
+    "sql",
+    "jpa",
+    "oop-patterns",
+    "tdd",
+    "ai-assist",
+    "mentoring",
+    "agile",
+    "comms"
+   ],
+   "nice": [
+    "docker",
+    "k8s",
+    "cicd",
+    "aws"
+   ],
+   "note": "Angular or React accepted; React tracked here."
+  },
+  {
+   "id": "isa-sse",
+   "company": "ISA",
+   "title": "Senior Software Engineer (DevOps-leaning)",
+   "level": "Senior",
+   "exp": "3+ yrs (2 in DevOps)",
+   "mode": "Sri Lanka",
+   "source": [
+    "1Wauo3_c9x31qcqMZ-6pfNs3h-oLJ2_cOuwPRIrd9nyk"
+   ],
+   "url": "https://docs.google.com/document/d/1Wauo3_c9x31qcqMZ-6pfNs3h-oLJ2_cOuwPRIrd9nyk/edit",
+   "must": [
+    "cicd",
+    "aws",
+    "observability",
+    "linux",
+    "oop-patterns",
+    "system-design",
+    "mentoring",
+    "comms"
+   ],
+   "nice": [],
+   "note": "Needs 2+ years as a DevOps engineer."
+  },
+  {
+   "id": "ev-fullstack",
+   "company": "EV Technologies",
+   "title": "Software Engineer / Senior SE – Full Stack (Java, React, Spring Boot)",
+   "level": "Mid–Senior",
+   "exp": "3–5 yrs",
+   "mode": "Hybrid",
+   "source": [
+    "1j3_fjh0GAm93l9yRQLgB6LyMhKBaIgxy"
+   ],
+   "url": "https://drive.google.com/file/d/1j3_fjh0GAm93l9yRQLgB6LyMhKBaIgxy/view",
+   "must": [
+    "java",
+    "spring-boot",
+    "react"
+   ],
+   "nice": [],
+   "note": "The poster lists titles only (also SE – Integrations and Lead Data Engineer), so requirements are limited to the stack in the titles."
+  }
+ ],
+ "sources": [
+  {
+   "id": "1EH_bucFRhkRwEGXSe3h4rC-9oC-SudVw",
+   "title": "Orysis SE.png",
+   "modified": "2026-11-23T03:34:49.539Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1-08dybLwr8qO2yJWDI31P3FfQ-5Xy_lp",
+   "title": "Orysis SSE.png",
+   "modified": "2026-11-23T03:34:43.717Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1gdv6WD-b-w56p12ZjHS4kD8bInXbu44xLBKyrEGvrqc",
+   "title": "Senior Software Engineer @ Sysco LABS Sri Lanka",
+   "modified": "2026-11-10T06:48:34.019Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1MXeUBsjQv2Hg7zroFi0oFFxcb4bvimth",
+   "title": "softvil SE.jpg",
+   "modified": "2026-11-10T06:49:39.362Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1j3qIzQQh0xhkGC0QbXCgNyHurHA4hJ0h",
+   "title": "Software Engineer - Full Stack _ Acentura.pdf",
+   "modified": "2026-11-10T06:50:16.230Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1thZaAwAL5Ws2lRIalyya6tOzpMtm1_kM",
+   "title": "Pickme Senior Software Engineer – Java.pdf",
+   "modified": "2026-10-06T05:38:56.560Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1ZSNsO00Ar-PgGAUtz2mhAkoqk959gIVZ",
+   "title": "Senior Software Engineer - Full Stack _ Acentura.pdf",
+   "modified": "2026-11-10T06:50:16.111Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "101X11eAFme6Q38XiNgAeBLqAC6PJiXs0",
+   "title": "Front Walker SSE.pdf",
+   "modified": "2026-10-21T02:27:56.464Z",
+   "status": "unreadable",
+   "note": "60 MB PDF; the Drive reader returned no text (probably scanned or image-only). Needs a smaller or text-based copy."
+  },
+  {
+   "id": "1mSGCRDNY_miK4RZ8IzFx-5OKCwMacaP2",
+   "title": "WSO2 Senior Software Engineer - Agent Platform.pdf",
+   "modified": "2026-10-06T05:38:47.655Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1ZMoDMf7qx91WNoAhB-kiZXnPI_TYnTdoB55txzhTSpk",
+   "title": "Senior Software Engineer By Pearson",
+   "modified": "2026-10-09T09:27:04.942Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1elBCewuoKVF1glWCdrW1PC30k3elgCshwJjIsASL75o",
+   "title": "Software Engineer By H2O.ai",
+   "modified": "2026-10-08T03:01:06.176Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "16BqbN51m54-ZAlK4YjSt8rzqu86SE45qdyofc88LmtQ",
+   "title": "Senior/ Software Engineer – Full Stack (Java + React) By iLabs",
+   "modified": "2026-10-08T02:54:05.085Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1cGLChVZb0uQYdjqWuHgU2w5xD9bQj2ERspNqMczWUg4",
+   "title": "Software Engineer - Java By Gallagher",
+   "modified": "2026-10-08T02:52:55.226Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1aw0a0ZMQhvc10c940s-wTpLGSWwxwZqe",
+   "title": "Senior Software Engineer - Logo.pdf",
+   "modified": "2026-09-29T03:15:15.547Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1OqTJZnWF5oOmWo0yyJrryQ_bhupQ8U7KzzSAg0_MDQY",
+   "title": "Senior Software Engineer (Full Stack | Java Script +Spring Boot + React) By OXO Tech",
+   "modified": "2026-10-09T07:44:09.124Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1yjxLbbcmVOXZX-SnpaHp2bF1E8dV930VJFbJEpIGGvA",
+   "title": "Senior Software Engineer - Java By MillenniumIT ESP (copy 1)",
+   "modified": "2026-10-09T04:51:31.506Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1w9VDgXyTGW68q4eDnKUIvvDUjs4Bu9Wpq2vOuEOKjbY",
+   "title": "Senior Software Engineer - Java By MillenniumIT ESP (copy 2)",
+   "modified": "2026-10-09T04:49:44.070Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1fCVqKtrIfzt1_SBcAqyGxYhZE6tuOO5_RSwdC8DAtGw",
+   "title": "Senior Software Engineer By CodeGen International",
+   "modified": "2026-10-08T03:02:48.863Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1Wauo3_c9x31qcqMZ-6pfNs3h-oLJ2_cOuwPRIrd9nyk",
+   "title": "Senior Software Engineer By ISA",
+   "modified": "2026-10-08T03:01:58.387Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1j3_fjh0GAm93l9yRQLgB6LyMhKBaIgxy",
+   "title": "EV Technologies",
+   "modified": "2026-10-08T02:35:38.528Z",
+   "status": "read",
+   "note": ""
+  }
+ ],
+ "changelog": [
+  {
+   "date": "2026-11-23",
+   "text": "First build: read 20 files in the Drive folder (19 readable). 59 skills across 18 roles. 1 file (Front Walker SSE.pdf) could not be read."
+  }
+ ]
+}
