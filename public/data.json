@@ -1,6 +1,6 @@
 {
  "baseline": "2026-11-23",
- "lastChecked": "2026-11-23",
+ "lastChecked": "2026-11-25",
  "folderId": "1vnGL3WFRc_A7YaDxQTOLzVeMIN3yDs0F",
  "skills": [
   {
@@ -490,6 +490,38 @@
    "desc": "Cross-platform mobile apps in React: components, navigation, state management.",
    "check": "You've built and run a small React Native app with navigation and shared state.",
    "added": "2026-11-23"
+  },
+  {
+   "id": "ci-automation",
+   "name": "CI/CD automation & release engineering (GitHub Actions, monorepos)",
+   "cat": "Cloud & DevOps",
+   "desc": "Building and tuning CI pipelines, release processes, dependency updates and CVE remediation automation, with shell/Python scripting, in large or monorepo codebases.",
+   "check": "You can set up a GitHub Actions pipeline for a multi-module Maven repo, automate dependency bumps and a release, and measure build times to remove bottlenecks.",
+   "added": "2026-11-25"
+  },
+  {
+   "id": "devex",
+   "name": "Developer experience & process optimisation",
+   "cat": "Engineering practice",
+   "desc": "Finding friction in engineering workflows and turning it into automated, metric-driven processes; driving adoption of new (including AI) tooling across teams.",
+   "check": "You can name a workflow you automated end to end, the metric you used to prove it helped, and how you got other teams to adopt it.",
+   "added": "2026-11-25"
+  },
+  {
+   "id": "bpmn",
+   "name": "BPMN / workflow orchestration",
+   "cat": "Architecture",
+   "desc": "Modelling and running business processes as executable workflows (e.g. Camunda, BPMN 2.0).",
+   "check": "You can model a process in BPMN 2.0 and explain how an engine such as Camunda executes it.",
+   "added": "2026-11-25"
+  },
+  {
+   "id": "health-privacy",
+   "name": "Healthcare data privacy",
+   "cat": "Security",
+   "desc": "Protecting patient health data: access control, encryption, audit logging and awareness of regulations such as HIPAA/GDPR/NDPA.",
+   "check": "You can describe how you would store, encrypt, access-control and audit sensitive patient records in an API.",
+   "added": "2026-11-25"
   }
  ],
  "roles": [
@@ -1295,6 +1327,65 @@
    ],
    "nice": [],
    "note": "Any backend language accepted; no specific stack named."
+  },
+  {
+   "id": "mimi-sse",
+   "company": "Mimi Dental Clinic",
+   "title": "Senior Software Engineer",
+   "level": "Senior",
+   "exp": "4+ yrs",
+   "mode": "Remote (Ibadan, Nigeria clinic)",
+   "source": [
+    "15NKgcD6SP7BuU2dOJ_BZ7b8NF9xuQK6nRg-hS0T0qew"
+   ],
+   "url": "https://docs.google.com/document/d/15NKgcD6SP7BuU2dOJ_BZ7b8NF9xuQK6nRg-hS0T0qew/edit",
+   "must": [
+    "java",
+    "rest-soap",
+    "react-native",
+    "aws",
+    "docker",
+    "k8s",
+    "sql",
+    "nosql",
+    "secure-coding",
+    "cicd",
+    "system-design",
+    "observability",
+    "comms"
+   ],
+   "nice": [
+    "health-privacy"
+   ],
+   "note": "Any of Python, C#, Java, TypeScript or Go accepted; Java tracked. AWS, GCP or Azure accepted; AWS tracked. Full-time and part-time. No application address in the description."
+  },
+  {
+   "id": "camunda-be",
+   "company": "Camunda",
+   "title": "Senior Software Engineer, Backend (Engineering Operations)",
+   "level": "Senior",
+   "exp": "—",
+   "mode": "Remote (global)",
+   "source": [
+    "1g5RkjXEDjpIxD-UOqYivd1e9XgiMAQ3mVgk1Dt6Y7uc"
+   ],
+   "url": "https://docs.google.com/document/d/1g5RkjXEDjpIxD-UOqYivd1e9XgiMAQ3mVgk1Dt6Y7uc/edit",
+   "must": [
+    "java",
+    "ci-automation",
+    "build-tools",
+    "docker",
+    "python",
+    "git",
+    "observability",
+    "devex",
+    "ai-assist",
+    "comms"
+   ],
+   "nice": [
+    "bpmn"
+   ],
+   "note": "No years stated. Fullstack or backend. Applications via Camunda careers site; no email address in the description."
   }
  ],
  "sources": [
@@ -1486,6 +1577,20 @@
    "modified": "2026-11-23T05:57:52.510Z",
    "status": "read",
    "note": ""
+  },
+  {
+   "id": "15NKgcD6SP7BuU2dOJ_BZ7b8NF9xuQK6nRg-hS0T0qew",
+   "title": "Senior Software Engineer @ Mimi Dental Clinic [Remote]",
+   "modified": "2026-11-25T09:26:47.092Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1g5RkjXEDjpIxD-UOqYivd1e9XgiMAQ3mVgk1Dt6Y7uc",
+   "title": "Senior Software Engineer, Backend @ Camunda [Remote]",
+   "modified": "2026-11-25T09:28:28.606Z",
+   "status": "read",
+   "note": ""
   }
  ],
  "changelog": [
@@ -1508,6 +1613,10 @@
   {
    "date": "2026-11-23",
    "text": "Agile skill now accepts Azure DevOps Boards as well as Jira (MillenniumIT ESP lists both). Skill id unchanged."
+  },
+  {
+   "date": "2026-11-25",
+   "text": "Friday run: 2 new JDs read (Mimi Dental, Camunda). 2 roles and 4 skills (CI/CD automation, developer experience, BPMN, healthcare privacy) added: 27 roles, 65 skills. Repo not reachable in this run; hosted data only. No progress ticks found, so no application drafts."
   }
  ],
  "drafted": [
