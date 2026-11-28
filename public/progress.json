@@ -246,13 +246,20 @@
   },
   "sec-tools": {
     "done": false,
-    "note": "Partial. From your DevOps Engineer Masters Program certificate (NetXperts): Module 8 SonarQube covers one SAST tool. Snyk, Dependency-Check and a DAST tool (ZAP/Burp) are still to do.",
-    "at": 1795408527501
+    "note": "Partial. From your DevOps Engineer Masters Program certificate (NetXperts): Module 8 SonarQube covers one SAST tool. At Mobitel you take part in vulnerability assessments (VA) of Struts apps, but the tools used aren't recorded. Add which scanners you used (e.g. Snyk, Dependency-Check, ZAP, Burp) to tick it.",
+    "at": 1795873308674
   },
   "secure-coding": {
-    "done": false,
-    "note": "Partial. From your LinkedIn profile: Winner of the Cyberzilla 2.0 All-Island Cybersecurity Quiz; delivered secure applications at Maga. Review OWASP Top 10 fixes in Java to tick it.",
-    "at": 1795407325241
+    "done": true,
+    "note": "Vulnerability assessment (VA) findings fixed in Struts-based Java applications at Mobitel.",
+    "at": 1795873308674,
+    "proof": [
+      {
+        "kind": "project",
+        "source": "Struts-based projects at Mobitel",
+        "detail": "Vulnerability assessment (VA) and VA fixing on Java Struts applications: remediating security findings in code and configuration (your statement)."
+      }
+    ]
   },
   "spring-boot": {
     "done": true,
@@ -393,7 +400,7 @@
   "legacy": {
     "done": true,
     "note": "",
-    "at": 1795413143293,
+    "at": 1795873308674,
     "proof": [
       {
         "kind": "cv",
@@ -404,6 +411,11 @@
         "kind": "project",
         "source": "OneFuel and M Attendance (Mobitel)",
         "detail": "Legacy code and framework upgrades in both (your statement)."
+      },
+      {
+        "kind": "project",
+        "source": "Struts-based projects at Mobitel",
+        "detail": "Maintaining and fixing legacy Java applications built on the Struts framework (your statement)."
       }
     ]
   },
