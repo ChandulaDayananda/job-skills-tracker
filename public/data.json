@@ -1,6 +1,6 @@
 {
  "baseline": "2026-11-23",
- "lastChecked": "2026-11-25",
+ "lastChecked": "2026-11-27",
  "folderId": "1vnGL3WFRc_A7YaDxQTOLzVeMIN3yDs0F",
  "skills": [
   {
@@ -522,6 +522,62 @@
    "desc": "Protecting patient health data: access control, encryption, audit logging and awareness of regulations such as HIPAA/GDPR/NDPA.",
    "check": "You can describe how you would store, encrypt, access-control and audit sensitive patient records in an API.",
    "added": "2026-11-25"
+  },
+  {
+   "id": "eip",
+   "name": "Enterprise integration patterns",
+   "cat": "Architecture",
+   "desc": "Patterns for connecting enterprise systems: routing, transformation, idempotent consumers, outbox and retries.",
+   "check": "You can design an integration between two systems, name the patterns used and explain how failures and duplicates are handled.",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "caching",
+   "name": "Caching & Redis",
+   "cat": "Data",
+   "desc": "Cache-aside and write-through strategies, expiry, invalidation and consistency with Redis.",
+   "check": "You can add Redis caching to a service and explain invalidation, stampede protection and consistency trade-offs.",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "jvm-perf",
+   "name": "JVM tuning & concurrency performance",
+   "cat": "Engineering practice",
+   "desc": "Profiling, garbage collection, multithreading and tuning high-concurrency Java systems.",
+   "check": "You can profile a Java service, read GC logs and thread dumps, fix a bottleneck and show the measured gain.",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "servicenow",
+   "name": "ServiceNow development & administration",
+   "cat": "Domain & certs",
+   "desc": "Scripting, business rules, workflows, ACLs, catalog and integrations on ServiceNow (CSA/CIS/CAD certifications).",
+   "check": "You can build a catalog item with a workflow, script and REST integration on a ServiceNow instance.",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "itil",
+   "name": "ITIL & ITSM processes",
+   "cat": "People & process",
+   "desc": "Incident, problem, change and service catalog processes in the ITIL framework.",
+   "check": "You can explain the incident, problem and change processes and how they connect.",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "sap-abap",
+   "name": "SAP ABAP on S/4HANA",
+   "cat": "Domain & certs",
+   "desc": "ABAP 7.4+, CDS views, AMDP, code pushdown, RAP, enhancements and interfaces.",
+   "check": "You can build a CDS view and a RAP or ABAP report on S/4HANA and tune its performance.",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "sap-odata",
+   "name": "SAP Fiori/UI5 & OData integration",
+   "cat": "Domain & certs",
+   "desc": "OData services and backend integration for Fiori/UI5 apps.",
+   "check": "You can expose and debug an OData service used by a Fiori/UI5 app.",
+   "added": "2026-11-27"
   }
  ],
  "roles": [
@@ -1386,6 +1442,207 @@
     "bpmn"
    ],
    "note": "No years stated. Fullstack or backend. Applications via Camunda careers site; no email address in the description."
+  },
+  {
+   "id": "contract-fs",
+   "company": "Company not named (Ref 00008563)",
+   "title": "Senior Software Engineer – Full Stack (Contract)",
+   "level": "Senior",
+   "exp": "4+ yrs (ad header says 5–10)",
+   "mode": "Contract, Hybrid, Colombo",
+   "source": [
+    "1YFZbAaGzz5uKVDcQ1GKnjJGfCD6u-6jIaJhqSVK5TAo"
+   ],
+   "url": "https://docs.google.com/document/d/1YFZbAaGzz5uKVDcQ1GKnjJGfCD6u-6jIaJhqSVK5TAo/edit",
+   "must": [
+    "java",
+    "spring-boot",
+    "rest-soap",
+    "microservices",
+    "eip",
+    "react",
+    "sql",
+    "aws",
+    "iac",
+    "cicd",
+    "debugging",
+    "distributed",
+    "agile",
+    "comms"
+   ],
+   "nice": [
+    "gcp",
+    "llm",
+    "agents",
+    "messaging",
+    "tdd"
+   ],
+   "note": "Requirements say minimum 4+ years; the header says 5–10. 4 used. Redux is tracked under React. No application address."
+  },
+  {
+   "id": "x99-java",
+   "company": "99x",
+   "title": "Java Engineers (Software Engineer to Architect)",
+   "level": "Multiple",
+   "exp": "Not stated",
+   "mode": "Not stated",
+   "source": [
+    "1DjVHP7mB496e7jEMFohBcM6X7Emvz0lT"
+   ],
+   "url": "https://drive.google.com/file/d/1DjVHP7mB496e7jEMFohBcM6X7Emvz0lT/view",
+   "must": [
+    "java",
+    "spring-boot",
+    "microservices",
+    "distributed",
+    "rest-soap",
+    "messaging",
+    "aws",
+    "docker",
+    "k8s",
+    "cicd",
+    "sql",
+    "secure-coding",
+    "oauth",
+    "observability",
+    "unit-testing",
+    "git",
+    "agile",
+    "debugging",
+    "comms"
+   ],
+   "nice": [
+    "iac",
+    "graphql",
+    "payments",
+    "ai-assist",
+    "system-design",
+    "mentoring"
+   ],
+   "note": "One poster for five levels; level is set by experience. AWS or Azure accepted; AWS tracked. Senior and lead levels also expect architecture ownership and mentoring. Apply on the 99x careers page."
+  },
+  {
+   "id": "hcl-snow",
+   "company": "HCL Technologies Lanka",
+   "title": "ServiceNow Developer",
+   "level": "Senior",
+   "exp": "5+ yrs",
+   "mode": "Full-time, Colombo",
+   "source": [
+    "1hFhX8JCSssSggOkt47eeJfQplI3j4dIo"
+   ],
+   "url": "https://drive.google.com/file/d/1hFhX8JCSssSggOkt47eeJfQplI3j4dIo/view",
+   "must": [
+    "servicenow",
+    "itil",
+    "rest-soap",
+    "js-ts",
+    "agile",
+    "comms"
+   ],
+   "nice": [
+    "sql",
+    "aws"
+   ],
+   "note": "The 5 years are ServiceNow experience; 12–15 years total ITSM experience is also desired. CSA, CIS and CAD certifications are required. Apply via XpressJobs."
+  },
+  {
+   "id": "yican-arch",
+   "company": "YI CAN PTE. LTD.",
+   "title": "Senior Java Architect",
+   "level": "Architect",
+   "exp": "7+ yrs",
+   "mode": "Full-time, Colombo",
+   "source": [
+    "1o11Cfss3LRAJJAT-zv-JuecchuPR0VBf"
+   ],
+   "url": "https://drive.google.com/file/d/1o11Cfss3LRAJJAT-zv-JuecchuPR0VBf/view",
+   "must": [
+    "java",
+    "spring-boot",
+    "jpa",
+    "microservices",
+    "distributed",
+    "system-design",
+    "jvm-perf",
+    "sql",
+    "caching",
+    "messaging",
+    "docker",
+    "k8s",
+    "cicd",
+    "git",
+    "oop-patterns",
+    "debugging",
+    "mentoring",
+    "comms"
+   ],
+   "nice": [
+    "aws",
+    "observability",
+    "nosql"
+   ],
+   "note": "Also needs 2+ years in an architect or technical lead role. Apply via XpressJobs."
+  },
+  {
+   "id": "hcl-sap",
+   "company": "HCL Technologies Lanka",
+   "title": "Senior Developer – SAP ABAP S/4HANA",
+   "level": "Senior",
+   "exp": "Not stated",
+   "mode": "Full-time, Colombo",
+   "source": [
+    "1cSZeZUyYX45mUoz_qL0lMprHJsKIfnOq"
+   ],
+   "url": "https://drive.google.com/file/d/1cSZeZUyYX45mUoz_qL0lMprHJsKIfnOq/view",
+   "must": [
+    "sap-abap",
+    "sap-odata",
+    "debugging",
+    "comms"
+   ],
+   "nice": [
+    "agile",
+    "mentoring"
+   ],
+   "note": "Asks for strong SAP ABAP experience but states no number of years. Apply via XpressJobs."
+  },
+  {
+   "id": "surge-tl",
+   "company": "Surge Global",
+   "title": "Technical Lead – Full Stack",
+   "level": "Lead",
+   "exp": "5+ yrs",
+   "mode": "Full-time, 1-year contract, Colombo",
+   "source": [
+    "1B1COvx9W4G86brY1alPtGK4gLbARN3e4"
+   ],
+   "url": "https://drive.google.com/file/d/1B1COvx9W4G86brY1alPtGK4gLbARN3e4/view",
+   "must": [
+    "react",
+    "nodejs",
+    "python",
+    "js-ts",
+    "sql",
+    "nosql",
+    "rest-soap",
+    "microservices",
+    "system-design",
+    "aws",
+    "secure-coding",
+    "debugging",
+    "mentoring",
+    "comms",
+    "agile"
+   ],
+   "nice": [
+    "docker",
+    "k8s",
+    "cicd",
+    "git",
+    "ai-assist"
+   ],
+   "note": "Python and Node.js are prioritised; React, Angular or Vue accepted (React tracked). AWS, Azure or GCP accepted (AWS tracked). Apply via the online form."
   }
  ],
  "sources": [
@@ -1591,6 +1848,55 @@
    "modified": "2026-11-25T09:28:28.606Z",
    "status": "read",
    "note": ""
+  },
+  {
+   "id": "1YFZbAaGzz5uKVDcQ1GKnjJGfCD6u-6jIaJhqSVK5TAo",
+   "title": "Senior Software Engineer - Full Stack by Senior Software Engineer - Full Stack",
+   "modified": "2026-11-27T05:09:01.776Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1LRTToVeJ8A51odPCVTDsyqTx31f5gn0UDhtHpn-DQoY",
+   "title": "Senior Software Engineer by IdeaBits",
+   "modified": "2026-11-27T06:37:16.080Z",
+   "status": "unreadable",
+   "note": "The document is blank: no text, and the PDF export is an empty page."
+  },
+  {
+   "id": "1hFhX8JCSssSggOkt47eeJfQplI3j4dIo",
+   "title": "SericeNow Developer.pdf",
+   "modified": "2026-11-27T05:14:56.412Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1o11Cfss3LRAJJAT-zv-JuecchuPR0VBf",
+   "title": "Senior Java Architect _ Colombo.pdf",
+   "modified": "2026-11-27T05:15:10.300Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1cSZeZUyYX45mUoz_qL0lMprHJsKIfnOq",
+   "title": "Senior Developer - SAP ABAP S4 Hana.pdf",
+   "modified": "2026-11-27T05:15:25.343Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1DjVHP7mB496e7jEMFohBcM6X7Emvz0lT",
+   "title": "99X Java Engineers.pdf",
+   "modified": "2026-11-27T10:06:24.320Z",
+   "status": "read",
+   "note": ""
+  },
+  {
+   "id": "1B1COvx9W4G86brY1alPtGK4gLbARN3e4",
+   "title": "Surge Global _ Technical Lead - Full Stack.pdf",
+   "modified": "2026-11-27T05:14:23.517Z",
+   "status": "read",
+   "note": ""
   }
  ],
  "changelog": [
@@ -1617,6 +1923,10 @@
   {
    "date": "2026-11-25",
    "text": "Friday run: 2 new JDs read (Mimi Dental, Camunda). 2 roles and 4 skills (CI/CD automation, developer experience, BPMN, healthcare privacy) added: 27 roles, 65 skills. Repo not reachable in this run; hosted data only. No progress ticks found, so no application drafts."
+  },
+  {
+   "date": "2026-11-27",
+   "text": "Friday run: 7 new files, 6 read (contract Full Stack, 99x, HCL ServiceNow, HCL SAP ABAP, YI CAN Java Architect, Surge Global); IdeaBits document is blank. 6 roles and 7 skills added: 33 roles, 72 skills. Readiness rechecked with the repo's progress.json (20 skills ticked, best role 64%), so no application drafts."
   }
  ],
  "drafted": [
